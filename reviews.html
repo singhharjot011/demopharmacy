@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="src/assets/img/logo.png" type="image/icon type" />
-    <title>ABC Pharmacy</title>
+    <title>Reviews: ABC Pharmacy</title>
     <link href="output.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="flex flex-col items-center justify-center">
@@ -48,7 +49,9 @@
           </div>
         </div>
       </div>
-      <nav class="flex w-full justify-between px-8 py-2 md:px-16">
+      <nav
+        class="relative flex h-16 w-full flex-col items-center justify-between px-8 py-2 sm:text-sm md:flex-row md:items-start md:px-16 lg:text-base"
+      >
         <a href="index.html" class="relative flex h-auto w-48">
           <img
             class="h-full w-full object-contain"
@@ -56,10 +59,59 @@
             alt="Logo"
           />
           <hr
-            class="absolute -right-4 top-1/3 h-1/3 border border-darkText opacity-50"
+            class="absolute -right-4 top-1/3 hidden h-1/3 border border-darkText opacity-50 md:block"
           />
         </a>
-        <ul class="hidden items-center space-x-4 md:flex">
+        <!-- Expanded Navbar -->
+        <div
+          id="expanded-navbar"
+          class="absolute left-0 top-20 z-20 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
+        >
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="index.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Home</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="about.html"
+              class="text-sm text-darkText hover:text-primary"
+              >About Us</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="services.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Services</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="contact.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Contact Us</a
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 p-2">
+            <button
+              class="h-max max-w-max rounded-full border-2 border-darkText px-1 py-1 text-xs text-darkText hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2"
+            >
+              Manage a prescription
+            </button>
+            <button
+              class="h-max max-w-max rounded-full border-2 border-darkText px-2 py-1 text-xs text-darkText hover:bg-darkText hover:text-whiteAlternate active:scale-95"
+            >
+              Book an Appointment
+            </button>
+          </div>
+        </div>
+        <ul
+          id="navbar-links-menu"
+          class="hidden w-full flex-col items-center justify-center gap-2 md:flex md:h-full md:w-auto md:flex-row md:gap-0 md:space-x-4"
+        >
           <li>
             <a href="index.html" class="text-darkText hover:text-primary"
               >Home</a
@@ -82,19 +134,38 @@
             >
           </li>
         </ul>
+
         <div
-          class="hidden items-center gap-2 text-sm font-semibold tracking-tight md:flex"
+          class="hidden h-full items-center gap-1 text-sm font-semibold tracking-tight md:flex md:gap-2"
         >
           <button
-            class="h-max rounded-full border-2 border-darkText px-2 py-1 hover:bg-darkText hover:text-whiteAlternate active:scale-95"
+            class="h-max rounded-full border-2 border-darkText px-1 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2 md:text-sm lg:text-base"
           >
             Manage a prescription
           </button>
           <button
-            class="h-max rounded-full border-2 border-darkText px-2 py-1 hover:bg-darkText hover:text-whiteAlternate active:scale-95"
+            class="h-max rounded-full border-2 border-darkText px-2 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:text-sm lg:text-base"
           >
             Book an Appointment
           </button>
+        </div>
+
+        <div class="absolute right-12 top-1/3 flex items-center md:hidden">
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label for="menu-toggle" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-darkText stroke-darkText"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
         </div>
       </nav>
     </header>
