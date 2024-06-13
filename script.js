@@ -1,3 +1,4 @@
+
 const toggle = document.getElementById("menu-toggle");
 const expNav = document.getElementById("expanded-navbar");
 
@@ -40,25 +41,27 @@ allSections.forEach(function (section) {
 });
 
 // Lazy loading Images
-
 const imgTargets = document.querySelectorAll("img[data-src]");
 
 const loadImg = function (entries, observer) {
-  const [entry] = entries;
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
 
-  if (!entry.isIntersecting) return;
-
-  // Replace src with data-src
-  entry.target.src = entry.target.dataset.src;
-  entry.target.addEventListener("load", function () {
-    entry.target.classList.remove("lazy-img");
+    // Replace src with data-src
+    entry.target.src = entry.target.dataset.src;
+    entry.target.addEventListener("load", function () {
+      entry.target.classList.remove("lazy-img");
+    });
+    observer.unobserve(entry.target);
   });
-  observer.unobserve(entry.target);
 };
 
 const imgObserver = new IntersectionObserver(loadImg, {
   root: null,
-  threshold: 0,
+  threshold: 0.5, // Increased threshold
+  rootMargin: "200px", // Increased root margin
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+
