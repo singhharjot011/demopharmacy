@@ -1,19 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="src/assets/img/logo.png" type="image/icon type" />
-    <title>ABC Pharmacy</title>
+    <meta
+      name="description"
+      content="MediCrest Pharmacy offers comprehensive prescription services, health consultations, custom pill packages, and more. Located in Orangeville, ON, we are dedicated to your health and wellness. Visit us for personalized care and professional advice."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    />
+    <link
+      rel="icon"
+      href="src/assets/img/logos/fav-icon.png"
+      type="image/icon type"
+    />
+    <title>MediCrest Pharmacy</title>
     <link href="output.css" rel="stylesheet" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <header class="flex flex-col items-center justify-center">
       <div
-        class="mx-auto flex w-full items-center justify-between bg-light bg-opacity-35 px-8 py-1 text-xs md:px-16 md:text-base"
+        class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
       >
-        <a href="tel:905-999-9999" class="flex gap-1 text-darkText">
+        <a href="tel:519-392-2323" class="flex md:gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 md:h-6"
@@ -24,39 +36,48 @@
               d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
             />
           </svg>
-          <span>905-999-9999</span>
+          <span>519-392-2323</span>
         </a>
         <div>
-          <div class="flex space-x-4">
-            <a href="https://www.facebook.com" target="_blank"
+          <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
+            28 Mill St #104, Orangeville, ON L9W 2M3</a
+          >
+        </div>
+        <div>
+          <div class="flex space-x-1 md:space-x-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61559901263742"
+              target="_blank"
               ><img
                 class="h-6"
                 src="./src/assets/img/social/facebook.png"
-                alt=""
+                alt="Medicrest Pharmacy Facebook Page"
             /></a>
             <a href="https://www.instagram.com" target="_blank"
               ><img
                 class="h-6"
                 src="./src/assets/img/social/instagram.png"
-                alt=""
+                alt="Medicrest Pharmacy Instagram Page"
             /></a>
-            <a href="https://www.linkedin.com" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+              target="_blank"
               ><img
                 class="h-6"
                 src="./src/assets/img/social/linkedin.png"
-                alt=""
+                alt="Medicrest Pharmacy Linkedin Page"
             /></a>
           </div>
         </div>
       </div>
       <nav
-        class="relative flex h-16 w-full flex-col items-center justify-between px-8 py-2 sm:text-sm md:flex-row md:items-start md:px-16 lg:text-base"
+        class="relative flex h-20 w-full flex-col items-center justify-between px-8 py-2 sm:text-sm md:flex-row md:items-start md:px-16 lg:text-base"
       >
-        <a href="index.html" class="relative flex h-auto w-48">
+        <a href="index.html" class="relative flex h-full w-auto">
           <img
             class="h-full w-full object-contain"
-            src="./src/assets/img/full-logo.png"
-            alt="Logo"
+            src="src/assets/img/logos/logo.png"
+            alt="MediCrest Pharmacy"
           />
           <hr
             class="absolute -right-4 top-1/3 hidden h-1/3 border border-darkText opacity-50 md:block"
@@ -96,16 +117,20 @@
             >
           </div>
           <div class="flex flex-col items-center gap-2 p-2">
-            <button
-              class="h-max max-w-max rounded-full border-2 border-darkText px-1 py-1 text-xs text-darkText hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2"
+            <a
+              href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+              target="_blank"
+              class="h-max rounded-full border-2 border-darkText px-1 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2 md:text-sm lg:text-base"
             >
               Manage a prescription
-            </button>
-            <button
-              class="h-max max-w-max rounded-full border-2 border-darkText px-2 py-1 text-xs text-darkText hover:bg-darkText hover:text-whiteAlternate active:scale-95"
+            </a>
+            <a
+              href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+              target="_blank"
+              class="h-max rounded-full border-2 border-darkText px-2 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:text-sm lg:text-base"
             >
               Book an Appointment
-            </button>
+            </a>
           </div>
         </div>
         <ul
@@ -138,16 +163,20 @@
         <div
           class="hidden h-full items-center gap-1 text-sm font-semibold tracking-tight md:flex md:gap-2"
         >
-          <button
+          <a
+            href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+            target="_blank"
             class="h-max rounded-full border-2 border-darkText px-1 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2 md:text-sm lg:text-base"
           >
             Manage a prescription
-          </button>
-          <button
+          </a>
+          <a
+            href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+            target="_blank"
             class="h-max rounded-full border-2 border-darkText px-2 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:text-sm lg:text-base"
           >
             Book an Appointment
-          </button>
+          </a>
         </div>
 
         <div class="absolute right-12 top-1/3 flex items-center md:hidden">
@@ -181,19 +210,19 @@
             >
               <div class="z-10 border-l-2 border-orange-500">
                 <div class="z-10 ml-4 text-darkText">
-                  <h2 class="z-10 text-2xl font-bold sm:text-3xl lg:text-5xl">
-                    ABC Pharmacy
-                  </h2>
+                  <h1 class="z-10 text-2xl font-bold sm:text-3xl lg:text-5xl">
+                    MediCrest Pharmacy
+                  </h1>
                   <span class="text-xl font-semibold sm:text-2xl md:text-3xl"
                     >Your Health. Our Priority.</span
                   >
                 </div>
               </div>
               <strong class="z-10 text-base text-blackAlternate md:text-xl"
-                >Experience the difference with ABC Pharmacy.</strong
+                >Experience the difference with MediCrest Pharmacy.</strong
               >
               <p class="z-10 w-full text-sm tracking-wide md:text-lg lg:w-2/3">
-                Welcome to ABC Pharmacy! As a new pharmacy, we provide
+                Welcome to MediCrest Pharmacy! As a new pharmacy, we provide
                 high-quality care and personalized attention from the start. We
                 focus on proactive healthcare to ensure a healthier, happier
                 life.
@@ -212,8 +241,9 @@
               class="absolute right-10 top-10 z-0 h-56 w-2/3 overflow-hidden rounded-lg md:right-20 md:h-[300px] md:w-[300px] md:rounded-full lg:right-40 lg:h-[400px] lg:w-[400px] xl:right-52"
             >
               <img
-                class="h-full w-full object-cover md:object-center"
-                src="./src/assets/img/pharmacy/person.jpeg"
+                class="lazy-img h-full w-full object-cover object-center"
+                src="./src/assets/img/pharmacist/hero-img-lazy.webp"
+                data-src="./src/assets/img/pharmacist/hero-img.webp"
                 alt=""
               />
             </div>
@@ -222,7 +252,7 @@
             >
               <img
                 class="h-full w-full object-cover object-center"
-                src="./src/assets/img/pharmacy/Smaller Image.png"
+                src="./src/assets/img/pharmacy/Smaller Image.webp"
                 alt=""
               />
             </div>
@@ -231,7 +261,7 @@
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="">
       <div class="flex w-full flex-col md:flex-row">
         <div class="flex h-[400px] w-full flex-col md:h-[600px] md:w-1/2">
           <div class="flex h-1/2 w-full">
@@ -242,7 +272,7 @@
                 href=""
                 class="text-base font-semibold hover:scale-110 md:text-2xl"
               >
-                <h3>Book an Appointment</h3>
+                <h2>Book an Appointment</h2>
               </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -261,8 +291,8 @@
                 href=""
                 class="text-base font-semibold hover:scale-110 md:text-2xl"
               >
-                <h3>Manage</h3>
-                <h3>your prescription</h3>
+                <h2>Manage</h2>
+                <h2>your prescription</h2>
               </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +313,7 @@
                 href=""
                 class="text-base font-semibold hover:scale-110 md:text-2xl"
               >
-                <h3>Wellness Blogs</h3>
+                <h2>Wellness Blogs</h2>
               </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +332,7 @@
                 href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA"
                 class="text-base font-semibold hover:scale-110 md:text-2xl"
               >
-                <h3>Location</h3>
+                <h2>Location</h2>
               </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -326,8 +356,8 @@
                 href="services.html"
                 class="block transform text-xl font-semibold hover:scale-110 md:text-3xl"
               >
-                <h3>Our</h3>
-                <h3>services</h3>
+                <h2>Our</h2>
+                <h2>services</h2>
               </a>
             </div>
             <div class="absolute bottom-0 right-0 h-full w-full">
@@ -346,7 +376,7 @@
                 href="about.html"
                 class="text-base font-semibold hover:scale-110 md:text-2xl"
               >
-                <h3>About Us</h3>
+                <h2>About Us</h2>
               </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +394,7 @@
                   href="contact.html"
                   class="text-base font-semibold hover:scale-110 md:text-2xl"
                 >
-                  <h3>Contact Us</h3>
+                  <h2>Contact Us</h2>
                 </a>
                 <strong class="block text-base">ABC Pharmacy</strong>
                 <a href="tel:905-999-9999" class="text-xs md:text-base"
@@ -390,7 +420,7 @@
       </div>
     </section>
 
-    <section id="message">
+    <section id="message" class="section">
       <div
         class="my-16 flex flex-col px-2 py-12 sm:px-8 md:my-32 md:flex-row md:px-16"
       >
@@ -399,19 +429,22 @@
             class="relative flex h-60 w-full justify-center md:h-auto md:w-auto"
           >
             <img
-              src="./src/assets/img/leaves/1.jpg"
+              src="./src/assets/img/leaves/1-lazy.webp"
+              data-src="./src/assets/img/leaves/1.webp"
               alt="Symbol of Wellbeing"
-              class="z-10 h-32 w-32 rounded-full object-cover shadow-md md:h-52 md:w-52"
+              class="lazy-img z-10 h-32 w-32 rounded-full object-cover shadow-md md:h-52 md:w-52"
             />
             <img
-              src="./src/assets/img/staff/3.jpg"
+              src="./src/assets/img/staff/3-lazy.webp"
+              data-src="./src/assets/img/staff/3.webp"
               alt="Symbol of Wellbeing"
-              class="absolute left-10 top-20 h-32 w-32 object-cover object-right shadow-md md:h-64 md:w-64"
+              class="lazy-img absolute left-10 top-20 h-32 w-32 object-cover object-right shadow-md md:h-64 md:w-64"
             />
             <img
-              src="./src/assets/img/staff/2.jpg"
+              src="./src/assets/img/staff/2-lazy.webp"
+              data-src="./src/assets/img/staff/2.webp"
               alt="Symbol of Wellbeing"
-              class="absolute -top-20 right-10 h-32 w-32 object-cover shadow-md md:h-64 md:w-64"
+              class="lazy-img absolute -top-20 right-10 h-32 w-32 object-cover shadow-md md:h-64 md:w-64"
             />
           </div>
         </div>
@@ -452,7 +485,7 @@
       </div>
     </section>
 
-    <section id="info">
+    <section id="info" class="section">
       <div class="relative mb-16 px-2 py-1 sm:px-8 md:px-16">
         <div
           class="absolute right-0 z-10 flex w-3/4 flex-col gap-1 bg-purple-950 p-2 text-center text-sm font-bold text-whiteAlternate md:p-16 md:text-2xl"
@@ -470,15 +503,16 @@
         >
           <div class="z-10 w-4/5 overflow-hidden md:w-1/2">
             <img
-              class="h-full w-full rounded-lg object-cover"
-              src="./src/assets/img/staff/1.jpg"
+              class="lazy-img h-full w-full rounded-lg object-cover"
+              src="./src/assets/img/pharmacist/5-lazy.png"
+              data-src="./src/assets/img/pharmacist/5.webp"
               alt="Staff"
             />
           </div>
           <div class="z-10 rounded-lg bg-white p-8 shadow-lg md:w-1/3">
             <div class="mb-6 text-center">
               <h1 class="text-xl font-bold text-darkText md:text-4xl">
-                ABC Pharmacy
+                MediCrest Pharmacy
               </h1>
               <div class="mt-2 text-sm text-blackAlternate md:text-base">
                 <p>123 Health Ave, Riverdale, ON L9L0L0</p>
@@ -550,7 +584,7 @@
         >
           <div class="flex w-full justify-between">
             <div id="navigate" class="flex flex-col justify-start">
-              <h5 class="font mb-3">Navigate</h5>
+              <span class="font mb-3">Navigate</span>
               <div
                 class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
               >
@@ -559,7 +593,7 @@
               </div>
             </div>
             <div id="about" class="flex flex-col justify-start">
-              <h5 class="font mb-3">About</h5>
+              <span class="font mb-3">About</span>
               <div
                 class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
               >
@@ -569,7 +603,7 @@
               </div>
             </div>
             <div id="contact" class="flex flex-col justify-start">
-              <h5 class="font mb-3">Contact</h5>
+              <span class="font mb-3">Contact</span>
               <div
                 class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
               >
@@ -584,21 +618,28 @@
             </div>
           </div>
           <div class="flex space-x-4">
-            <img
-              class="h-8"
-              src="./src/assets/img/social/facebook-white.png"
-              alt=""
-            />
-            <img
-              class="h-8"
-              src="./src/assets/img/social/instagram-white.png"
-              alt=""
-            />
-            <img
-              class="h-8"
-              src="./src/assets/img/social/linkedin-white.png"
-              alt=""
-            />
+            <a
+              href="https://www.facebook.com/profile.php?id=61559901263742"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/facebook-white.png"
+                alt="Medicrest Pharmacy Facebook Page"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/instagram-white.png"
+                alt="Medicrest Pharmacy Instagram Page"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/linkedin-white.png"
+                alt="Medicrest Pharmacy Linkedin Page"
+            /></a>
           </div>
         </div>
         <span class="h-[1px] w-full bg-white/60 md:h-full md:w-[1px]"></span>
@@ -642,7 +683,7 @@
               class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
               >© 2024
               <a href="index.html" class="text-white hover:underline"
-                >ABC Pharmacy</a
+                >MediCrest Pharmacy</a
               >
             </span>
             <span class="text-xs">All Rights Reserved.</span>

@@ -1,9 +1,5 @@
-// document.getElementById("menu-toggle").addEventListener("change", function () {
-//   document.getElementById("navbar-links-menu").classList.toggle("hidden");
-// });
-
-var toggle = document.getElementById("menu-toggle");
-var expNav = document.getElementById("expanded-navbar");
+const toggle = document.getElementById("menu-toggle");
+const expNav = document.getElementById("expanded-navbar");
 
 window.addEventListener("scroll", () => {
   if (expNav.classList.contains("flex")) {
@@ -21,3 +17,48 @@ toggle.addEventListener("click", () => {
     expNav.classList.add("hidden");
   }
 });
+
+// Reveal Sections
+
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+// Lazy loading Images
+
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  // Replace src with data-src
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+  });
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+});
+
+imgTargets.forEach((img) => imgObserver.observe(img));

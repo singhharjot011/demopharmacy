@@ -24,3 +24,16 @@
 .active {
   @apply font-bold sm:text-base lg:text-lg;
 }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: all 0.8s ease-out;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
