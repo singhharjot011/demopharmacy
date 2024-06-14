@@ -1,4 +1,3 @@
-
 const toggle = document.getElementById("menu-toggle");
 const expNav = document.getElementById("expanded-navbar");
 
@@ -63,5 +62,3 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
-
-
