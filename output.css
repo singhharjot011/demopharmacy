@@ -2355,12 +2355,6 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-
-  @media (min-width: 768px) {
-    .sm\:md\:w-1\/4 {
-      width: 25%;
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -2467,10 +2461,6 @@ video {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:w-36 {
-    width: 9rem;
   }
 
   .md\:w-\[150px\] {
