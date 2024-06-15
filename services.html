@@ -13,7 +13,7 @@
     />
     <link
       rel="icon"
-      href="src/assets/img/logos/fav-icon.png"
+      href="./public/assets/img/logos/fav-icon.png"
       type="image/png type"
     />
     <title>Services: MediCrest Pharmacy</title>
@@ -202,16 +202,17 @@
     </header>
 
     <!-- Banner -->
-    <section id="banner">
+    <section id="banner" class="section">
       <div class="relative mb-20 w-full px-2 py-1 sm:px-8 md:px-16">
         <div class="flex w-full justify-end border-t border-darkText/40">
           <div
-            class="relative z-0 mt-16 h-72 w-[700px] overflow-hidden after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-[350px] after:bg-opacity-30 after:bg-gradient-to-l after:from-black after:to-transparent after:content-['']"
+            class="relative z-10 mt-16 h-72 w-[700px] overflow-hidden after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-[350px] after:bg-opacity-30 after:bg-gradient-to-l after:from-black after:to-transparent after:content-['']"
           >
             <img
-              class="z-0 h-full w-full object-cover"
-              src="/src/assets/img/banners/services.jpg"
-              alt=""
+              class="lazy-img z-0 h-full w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/services-banner-lazy.png"
+              data-src="./public/assets/img/services/services-banner.webp"
+              alt="Services Banner"
             />
             <div
               class="absolute right-0 top-0 z-20 flex h-full items-center justify-center p-4 text-whiteAlternate"
@@ -223,8 +224,18 @@
           </div>
         </div>
         <div
-          class="absolute -bottom-20 right-0 -z-10 h-52 w-full bg-light bg-opacity-35"
-        ></div>
+          class="absolute -bottom-20 left-0 z-0 flex h-52 w-full items-end justify-end bg-light bg-opacity-35"
+        >
+          <div class="z-10 mb-8 mr-2 h-min sm:mr-8 md:mr-16">
+            <ul class="flex gap-3 text-xs md:text-sm 2xl:text-base">
+              <li class="font-semibold text-darkText">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="text-darkText">&#10148;</li>
+              <li class="cursor-text">Pharmacy Services</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -250,9 +261,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/blister-packing.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/blister-packing-lazy.png"
+              data-src="./public/assets/img/services/blister-packing.webp"
+              alt="Blister Packing"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -273,9 +285,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/minor-ailments.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/minor-ailments-lazy.png"
+              data-src="./public/assets/img/services/minor-ailments.webp"
+              alt="Minor Ailment Assessments"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -296,9 +309,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/travel-health.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/travel-health-lazy.webp"
+              data-src="./public/assets/img/services/travel-health.webp"
+              alt="Travel Health"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -319,9 +333,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/covid-19.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/covid-19-lazy.png"
+              data-src="./public/assets/img/services/covid-19.webp"
+              alt="Flu, Covid-19, & Travel Vaccines"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -342,9 +357,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/compunding.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/compunding-lazy.png"
+              data-src="./public/assets/img/services/compunding.webp"
+              alt="Compounding Prescriptions"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -367,9 +383,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/medication-review.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/medication-review-lazy.png"
+              data-src="./public/assets/img/services/medication-review.webp"
+              alt="Medication Review"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -391,9 +408,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/diabetes.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/diabetes-lazy.png"
+              data-src="./public/assets/img/services/diabetes.webp"
+              alt="Diabetes Management"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -415,9 +433,10 @@
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
             <img
-              class="h-72 w-full object-cover"
-              src="./src/assets/img/services/smoking.jpg"
-              alt=""
+              class="lazy-img h-72 w-full object-cover"
+              src="./public/assets/img/services/lazy-imgs/smoking-lazy.png"
+              data-src="./public/assets/img/services/smoking.webp"
+              alt="Smoking Cessation Counselling"
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <div
@@ -449,10 +468,10 @@
           class="flex flex-col justify-between space-y-2 p-4 sm:w-1/2 sm:space-y-0"
         >
           <div class="flex w-full justify-between">
-            <div class="w-1/4">
+            <div class="h-24 md:h-32">
               <img
-                class="rounded-xl"
-                src="./src/assets/img/logos/footer-logo.png"
+                class="h-full object-contain"
+                src="./public/assets/img/logos/footer-logo.png"
                 alt=""
               />
             </div>
@@ -525,10 +544,7 @@
             Sign up for our newsletter to stay updated with exclusive offers,
             industry insights, and more!
           </p>
-          <form
-            action=""
-            class="relative mb-2 flex justify-center sm:w-1/3 md:w-2/3"
-          >
+          <form action="" class="relative mb-2 flex justify-center md:w-2/3">
             <input
               type="text"
               class="block w-full rounded-full bg-white/20 px-2 py-1 text-sm"
@@ -550,7 +566,8 @@
         <span class="h-[1px] w-full bg-white/60"></span>
         <div class="flex w-full justify-between px-4 pt-2">
           <div class="flex w-2/3 flex-col sm:block sm:w-auto">
-            <span class="text-xs text-white/60 sm:text-center sm:text-sm"
+            <span
+              class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
               >© 2024
               <a href="index.html" class="text-white hover:underline"
                 >MediCrest Pharmacy</a
@@ -560,7 +577,7 @@
           </div>
           <div>
             <ul
-              class="mt-3 flex items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm"
+              class="mt-3 flex items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
             >
               <li>
                 <a href="#" class="me-4 hover:underline md:me-6"
