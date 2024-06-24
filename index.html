@@ -25,7 +25,7 @@
       <div
         class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
       >
-        <a href="tel:519-392-2323" class="flex md:gap-1">
+        <a href="tel:519-398-2323" class="flex md:gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 md:h-6"
@@ -36,9 +36,9 @@
               d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
             />
           </svg>
-          <span>519-392-2323</span>
+          <span>519-398-2323</span>
         </a>
-        <div>
+        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
           <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
             28 Mill St #104, Orangeville, ON L9W 2M3</a
           >
@@ -87,7 +87,7 @@
         <!-- Expanded Navbar -->
         <div
           id="expanded-navbar"
-          class="absolute left-0 top-20 z-20 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
+          class="absolute left-0 top-20 z-30 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
         >
           <div class="border-b border-darkText/40 p-2">
             <a
@@ -200,8 +200,106 @@
       </nav>
     </header>
 
+    <!-- Temp Banner -->
+
+    <section id="temp-banner">
+      <div
+        class="absolute isolate z-20 flex w-full items-center gap-x-6 overflow-hidden bg-gray-50 px-6 sm:px-3.5 sm:before:flex-1"
+      >
+        <div
+          class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between">
+          <p
+            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+          >
+            <strong>We Are Open Now </strong>
+
+            &nbsp;&nbsp;
+            <span class="hidden md:block"
+              >| <strong>Mon-Fri:</strong> 10:00am to 6:30pm
+              <strong>Sat:</strong> 10:00am to 2:00PM |</span
+            >&nbsp;&nbsp;
+            <strong class="animate-pulse"> Visit Us Today! </strong>
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button
+            id="dismiss-btn"
+            type="button"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          >
+            <span class="sr-only">Dismiss</span>
+            <svg
+              class="h-5 w-5 text-gray-900"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section id="hero">
-      <div class="mb-16 w-full px-2 py-1 sm:px-8 lg:px-16">
+      <div class="mb-16 w-full px-2 sm:px-8 lg:px-16">
         <div
           class="flex w-full flex-col-reverse items-center justify-between border-t border-darkText/40 md:flex-row lg:ml-10"
         >
@@ -266,7 +364,7 @@
       </div>
     </section>
 
-    <section id="services" class="">
+    <section id="services" class="overflow-hidden">
       <div class="flex w-full flex-col md:flex-row">
         <div class="flex h-[400px] w-full flex-col md:h-[600px] md:w-1/2">
           <div class="flex h-1/2 w-full">
@@ -402,19 +500,22 @@
               <div class="relative z-10 h-full gap-2 p-4 text-whiteAlternate">
                 <a
                   href="contact.html"
-                  class="text-base font-semibold hover:scale-110 md:text-2xl"
+                  class="text-sm font-semibold hover:scale-110 md:text-base lg:text-2xl"
                 >
                   <h2>Contact Us</h2>
                 </a>
-                <strong class="block text-base">MediCrest Pharmacy</strong>
-                <a href="tel:519-392-2323" class="text-xs md:text-base"
-                  >Tel: 519-392-2323</a
+                <strong class="block text-sm md:text-base"
+                  >MediCrest Pharmacy</strong
+                >
+                <a href="tel:519-398-2323" class="text-xs md:text-base"
+                  >Tel: 519-398-2323</a
                 >
                 <p class="text-xs md:text-base">Fax: 519-398-2343</p>
+                <p class="text-xs md:text-base">Email:</p>
                 <a
-                  href="mailto:RxMedicrest@outlook.com"
-                  class="text-xs md:text-base"
-                  >Email: RxMedicrest@outlook.com</a
+                  href="mailto:medicrestrx@medicrestpharmacy.com"
+                  class="w-full break-words text-xs lg:text-base"
+                  >medicrestrx@medicrestpharmacy.com</a
                 >
                 <div
                   class="absolute bottom-5 right-0 z-0 hidden h-1/3 md:block"
@@ -442,19 +543,19 @@
               src="./src/assets/img/staff/3-lazy.webp"
               data-src="./src/assets/img/staff/3.webp"
               alt="Pharmacist's Image"
-              class="lazy-img -mr-10 h-32 w-32 object-cover object-right shadow-md lg:h-64 lg:w-64"
+              class="lazy-img -mr-10 h-32 w-32 object-cover object-right shadow-md md:h-44 md:w-44 xl:h-64 xl:w-64"
             />
             <img
               src="./src/assets/img/leaves/1-lazy.webp"
               data-src="./src/assets/img/leaves/1.webp"
               alt="Symbol of Wellbeing"
-              class="lazy-img z-10 h-32 w-32 self-center rounded-full object-cover shadow-md lg:h-52 lg:w-52"
+              class="lazy-img z-10 h-32 w-32 self-center rounded-full object-cover shadow-md md:h-28 md:w-28 xl:h-52 xl:w-52"
             />
             <img
               src="./src/assets/img/staff/2-lazy.webp"
               data-src="./src/assets/img/staff/2.webp"
               alt="Pharmacist's Image"
-              class="lazy-img -ml-10 h-32 w-32 self-end object-cover shadow-md lg:h-64 lg:w-64"
+              class="lazy-img -ml-10 h-32 w-32 self-end object-cover shadow-md md:h-44 md:w-44 xl:h-64 xl:w-64"
             />
           </div>
         </div>
@@ -497,7 +598,7 @@
     </section>
 
     <section id="info" class="section">
-      <div class="relative mb-16 px-2 py-1 sm:px-8 md:px-16">
+      <div class="relative mb-16 px-2 py-1 sm:px-8 lg:px-16">
         <div
           class="absolute right-0 z-10 flex w-3/4 flex-col gap-1 bg-purple-950 p-2 text-center text-sm font-bold text-whiteAlternate md:p-16 md:text-2xl"
         >
@@ -520,14 +621,14 @@
               alt="Pharmacist"
             />
           </div>
-          <div class="z-10 rounded-lg bg-white p-8 shadow-lg md:w-1/3">
+          <div class="z-10 rounded-lg bg-white p-8 shadow-lg lg:w-1/3">
             <div class="mb-6 text-center">
               <h1 class="text-xl font-bold text-darkText md:text-4xl">
                 MediCrest Pharmacy
               </h1>
               <div class="mt-2 text-sm text-blackAlternate md:text-base">
                 <p>28 Mill St #104, Orangeville, ON L9W 2M3</p>
-                <p>Phone: 519-392-2323</p>
+                <p>Phone: 519-398-2323</p>
                 <p>Fax: 519-398-2343</p>
                 <p>medicrestrx@medicrestpharmacy.com</p>
               </div>
@@ -593,22 +694,21 @@
     <!-- Feedback Section -->
     <section id="feedback" class="">
       <div
-        class="container z-10 mx-auto flex flex-col justify-center space-x-0 text-center md:text-start"
+        class="container z-10 mx-auto flex flex-col items-center justify-center space-x-0 text-center md:text-start"
       >
-        <div class="z-10 mx-auto mt-5 flex flex-col text-center md:mt-10">
+        <div class="z-10 mx-auto flex w-2/3 flex-col text-center md:mt-10">
           <h3 class="text-3xl font-semibold text-darkText">
-            Feedback from Our Clients
+            Leave a Review on Google
           </h3>
           <br />
           <p>
-            At MediCrest Pharmacy, we're committed to simplifying healthcare for
-            our patients. We collaborate closely with your doctor to ensure the
-            best care. Hear what our patients have to say about their
-            experiences with us.
+            At MediCrest Pharmacy, we're dedicated to providing exceptional
+            care. We value your feedback and invite you to share your experience
+            with us on Google Reviews. Your input helps us serve you better.
           </p>
         </div>
         <!-- Reviews Area -->
-        <div class="flex flex-col items-center md:flex-row">
+        <div class="flex flex-col items-center p-5 md:flex-row">
           <!-- Business Name and Info -->
           <div class="mt-4 flex gap-2 px-2 md:mt-0">
             <div class="w-max">
@@ -621,7 +721,7 @@
             <div class="flex flex-col">
               <span class="text-nowrap font-semibold">MediCrest Pharmacy</span>
               <div class="mb-1 flex items-center">
-                <span class="mr-2 font-semibold text-yellow-600">4.8</span>
+                <span class="mr-2 font-semibold text-yellow-600"></span>
                 <svg
                   class="h-5 w-5 text-yellow-300"
                   aria-hidden="true"
@@ -667,7 +767,7 @@
                   />
                 </svg>
                 <svg
-                  class="h-5 w-5 text-gray-300 dark:text-gray-500"
+                  class="h-5 w-5 text-yellow-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -678,7 +778,7 @@
                   />
                 </svg>
               </div>
-              <span class="text-xs">Based on 4 Reviews</span>
+              <span class="hidden text-xs">Based on {x} Reviews</span>
               <a
                 href="https://search.google.com/local/writereview?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
                 target="_blank"
@@ -718,7 +818,7 @@
           </div>
           <!-- Client's Reviews -->
           <div
-            class="no-scrollbar container relative z-10 my-4 flex items-start overflow-x-scroll scroll-smooth xl:justify-center"
+            class="no-scrollbar container relative z-10 my-4 flex hidden items-start overflow-x-scroll scroll-smooth xl:justify-center"
             id="feedback-div"
           >
             <!-- 1 -->
@@ -1175,8 +1275,20 @@
             <span class="text-xs">All Rights Reserved.</span>
           </div>
           <div>
+            <div class="flex w-2/3 flex-col sm:block sm:w-auto">
+              <span
+                class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
+                >Innovatively designed by
+                <a
+                  href="https://urbanwebpixels.com/"
+                  target="_blank"
+                  class="font-semibold"
+                  >Urban Web Pixels</a
+                >
+              </span>
+            </div>
             <ul
-              class="mt-3 flex items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
+              class="mt-3 hidden items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
             >
               <li>
                 <a href="#" class="me-4 hover:underline md:me-6"

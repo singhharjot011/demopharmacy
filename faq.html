@@ -25,7 +25,7 @@
       <div
         class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
       >
-        <a href="tel:519-392-2323" class="flex md:gap-1">
+        <a href="tel:519-398-2323" class="flex md:gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 md:h-6"
@@ -36,9 +36,9 @@
               d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
             />
           </svg>
-          <span>519-392-2323</span>
+          <span>519-398-2323</span>
         </a>
-        <div>
+        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
           <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
             28 Mill St #104, Orangeville, ON L9W 2M3</a
           >
@@ -76,7 +76,7 @@
         <a href="index.html" class="flex w-36 self-start lg:w-44 2xl:w-52">
           <img
             class="object-contain"
-            src="src/assets/img/logos/logo.png"
+            src="./public/assets/img/logos/logo.png"
             alt="MediCrest Pharmacy"
           />
           <hr
@@ -86,7 +86,7 @@
         <!-- Expanded Navbar -->
         <div
           id="expanded-navbar"
-          class="absolute left-0 top-20 z-20 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
+          class="absolute left-0 top-20 z-30 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
         >
           <div class="border-b border-darkText/40 p-2">
             <a
@@ -199,6 +199,104 @@
       </nav>
     </header>
 
+    <!-- Temp Banner -->
+
+    <section id="temp-banner">
+      <div
+        class="absolute isolate z-20 flex w-full items-center gap-x-6 overflow-hidden bg-gray-50 px-6 sm:px-3.5 sm:before:flex-1"
+      >
+        <div
+          class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between">
+          <p
+            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+          >
+            <strong>We Are Open Now </strong>
+
+            &nbsp;&nbsp;
+            <span class="hidden md:block"
+              >| <strong>Mon-Fri:</strong> 10:00am to 6:30pm
+              <strong>Sat:</strong> 10:00am to 2:00PM |</span
+            >&nbsp;&nbsp;
+            <strong class="animate-pulse"> Visit Us Today! </strong>
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button
+            id="dismiss-btn"
+            type="button"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          >
+            <span class="sr-only">Dismiss</span>
+            <svg
+              class="h-5 w-5 text-gray-900"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section id="banner">
       <div class="relative mb-20 w-full px-2 py-1 sm:px-8 md:px-16">
         <div class="flex w-full border-t border-darkText/40">
@@ -248,10 +346,15 @@
             <div
               class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
             >
-              Our pharmacy offers a wide range of services including
-              prescription refills, medication counseling, immunizations, and
-              health screenings. We also provide over-the-counter medications
-              and health and wellness products.
+              Our pharmacy offers a wide range of services to meet your health
+              needs. From vaccinations and medication reviews to travel health
+              consultations and diabetes management, we provide personalized
+              care to support your well-being. Visit us for expert advice and
+              treatment of minor ailments.
+              <br />
+              Go to
+              <a href="services.html" class="text-darkText">Our Services</a>
+              Page to find more about our services
             </div>
           </details>
           <details class="rounded-lg bg-white p-6 shadow-md">
@@ -267,20 +370,6 @@
               prescription bottles to our pharmacy, call us with your current
               pharmacy information, or use our online prescription transfer
               form.
-            </div>
-          </details>
-          <details class="rounded-lg bg-white p-6 shadow-md">
-            <summary
-              class="faq-question w-full cursor-pointer font-semibold text-blackAlternate md:text-xl"
-            >
-              Do you offer delivery services?
-            </summary>
-            <div
-              class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
-            >
-              Yes, we offer delivery services for your convenience. You can sign
-              up for delivery services in-store or through our website. We
-              ensure timely and safe delivery of your medications.
             </div>
           </details>
 
@@ -436,8 +525,20 @@
             <span class="text-xs">All Rights Reserved.</span>
           </div>
           <div>
+            <div class="flex w-2/3 flex-col sm:block sm:w-auto">
+              <span
+                class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
+                >Innovatively designed by
+                <a
+                  href="https://urbanwebpixels.com/"
+                  target="_blank"
+                  class="font-semibold"
+                  >Urban Web Pixels</a
+                >
+              </span>
+            </div>
             <ul
-              class="mt-3 flex items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
+              class="mt-3 hidden items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
             >
               <li>
                 <a href="#" class="me-4 hover:underline md:me-6"

@@ -36,9 +36,9 @@
               d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
             />
           </svg>
-          <span>519-392-2323</span>
+          <span>519-398-2323</span>
         </a>
-        <div>
+        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
           <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
             28 Mill St #104, Orangeville, ON L9W 2M3</a
           >
@@ -76,7 +76,7 @@
         <a href="index.html" class="flex w-36 self-start lg:w-44 2xl:w-52">
           <img
             class="object-contain"
-            src="src/assets/img/logos/logo.png"
+            src="./public/assets/img/logos/logo.png"
             alt="MediCrest Pharmacy"
           />
           <hr
@@ -86,7 +86,7 @@
         <!-- Expanded Navbar -->
         <div
           id="expanded-navbar"
-          class="absolute left-0 top-20 z-20 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
+          class="absolute left-0 top-20 z-30 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
         >
           <div class="border-b border-darkText/40 p-2">
             <a
@@ -201,17 +201,115 @@
       </nav>
     </header>
 
+    <!-- Temp Banner -->
+
+    <section id="temp-banner">
+      <div
+        class="absolute isolate z-20 flex w-full items-center gap-x-6 overflow-hidden bg-gray-50 px-6 sm:px-3.5 sm:before:flex-1"
+      >
+        <div
+          class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between">
+          <p
+            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+          >
+            <strong>We Are Open Now </strong>
+
+            &nbsp;&nbsp;
+            <span class="hidden md:block"
+              >| <strong>Mon-Fri:</strong> 10:00am to 6:30pm
+              <strong>Sat:</strong> 10:00am to 2:00PM |</span
+            >&nbsp;&nbsp;
+            <strong class="animate-pulse"> Visit Us Today! </strong>
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button
+            id="dismiss-btn"
+            type="button"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          >
+            <span class="sr-only">Dismiss</span>
+            <svg
+              class="h-5 w-5 text-gray-900"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- Banner -->
     <section id="banner" class="section">
       <div class="relative mb-20 w-full px-2 py-1 sm:px-8 md:px-16">
         <div class="flex w-full justify-end border-t border-darkText/40">
           <div
-            class="relative z-10 mt-16 h-72 w-[700px] overflow-hidden after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-[350px] after:bg-opacity-30 after:bg-gradient-to-l after:from-black after:to-transparent after:content-['']"
+            class="relative z-10 mt-16 h-72 w-[700px] overflow-hidden after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-[375px] after:bg-opacity-30 after:bg-gradient-to-l after:from-black after:to-transparent after:content-['']"
           >
             <img
               class="lazy-img z-0 h-full w-full object-cover"
-              src="./public/assets/img/services/lazy-imgs/services-banner-lazy.png"
-              data-src="./public/assets/img/services/services-banner.webp"
+              src="./public/assets/img/banner/services/services-banner-lazy.webp"
+              data-src="./public/assets/img/banner/services/services-banner.webp"
               alt="Services Banner"
             />
             <div
@@ -295,12 +393,17 @@
                 class="my-4 flex items-center gap-2 text-2xl font-bold tracking-tight text-darkText"
               >
                 <img class="h-5 w-5" src="./src/assets/img/span.png" alt="" />
-                <h5>Minor Ailment Assessments</h5>
+                <a href="minor-ailments.html">Minor Ailment Assessments</a>
               </div>
               <p class="mb-3 text-sm font-normal text-gray-700 md:text-base">
                 Receive quick and professional assessments for minor ailments.
                 Our pharmacists can provide treatment options to get you back to
                 feeling your best.
+                <a
+                  href="minor-ailments.html"
+                  class="font-semibold text-darkText"
+                  >Read More</a
+                >
               </p>
             </div>
           </div>
@@ -429,6 +532,33 @@
           </div>
 
           <!-- 8 -->
+
+          <div
+            class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="./public/assets/img/services/compression-hosiery/truform.webp"
+              alt="Men's and Women's Compression Hosiery"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <div
+                class="my-4 flex items-center gap-2 text-2xl font-bold tracking-tight text-darkText"
+              >
+                <img class="h-5 w-5" src="./src/assets/img/span.png" alt="" />
+                <h5>Men's and Women's Compression Hosiery</h5>
+              </div>
+              <p class="mb-3 text-sm font-normal text-gray-700 md:text-base">
+                We offers Truform compression stockings to improve circulation,
+                reduce swelling, and provide support. Ideal for travel, sports,
+                or daily wear, our team will help you find the perfect fit.
+                Visit us today!
+              </p>
+            </div>
+          </div>
+
+          <!-- 9 -->
+
           <div
             class="flex w-full flex-col items-center border-b-2 border-darkText border-opacity-30 sm:w-1/3 md:w-1/4"
           >
@@ -576,8 +706,20 @@
             <span class="text-xs">All Rights Reserved.</span>
           </div>
           <div>
+            <div class="flex w-2/3 flex-col sm:block sm:w-auto">
+              <span
+                class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
+                >Innovatively designed by
+                <a
+                  href="https://urbanwebpixels.com/"
+                  target="_blank"
+                  class="font-semibold"
+                  >Urban Web Pixels</a
+                >
+              </span>
+            </div>
             <ul
-              class="mt-3 flex items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
+              class="mt-3 hidden items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
             >
               <li>
                 <a href="#" class="me-4 hover:underline md:me-6"

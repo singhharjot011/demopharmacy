@@ -1,5 +1,7 @@
 const toggle = document.getElementById("menu-toggle");
 const expNav = document.getElementById("expanded-navbar");
+const tempBanner = document.getElementById("temp-banner");
+const dismissBtn = document.getElementById("dismiss-btn");
 
 window.addEventListener("scroll", () => {
   if (expNav.classList.contains("flex")) {
@@ -62,3 +64,9 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+// Close Temp Banner
+
+dismissBtn.addEventListener("click", (e) => {
+  tempBanner.classList.add("hidden");
+});
