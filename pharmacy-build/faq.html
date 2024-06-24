@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MediCrest Pharmacy offers comprehensive prescription services, health consultations, custom pill packages, and more. Located in Orangeville, ON, we are dedicated to your health and wellness. Visit us for personalized care and professional advice."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    />
+    <link
+      rel="icon"
+      href="./public/assets/img/logos/fav-icon.png"
+      type="image/png type"
+    />
+    <title>FAQ: MediCrest Pharmacy</title>
+    <link href="output.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="flex flex-col items-center justify-center">
+      <div
+        class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
+      >
+        <a href="tel:519-398-2323" class="flex md:gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 md:h-6"
+            viewBox="0 -960 960 960"
+            fill="#553159"
+          >
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
+            />
+          </svg>
+          <span>519-398-2323</span>
+        </a>
+        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
+          <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
+            28 Mill St #104, Orangeville, ON L9W 2M3</a
+          >
+        </div>
+        <div>
+          <div class="flex space-x-1 md:space-x-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61559901263742"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/facebook.png"
+                alt="Medicrest Pharmacy Facebook Page"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/instagram.png"
+                alt="Medicrest Pharmacy Instagram Page"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/linkedin.png"
+                alt="Medicrest Pharmacy Linkedin Page"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="relative flex h-20 w-full flex-col items-center justify-center px-8 py-2 sm:text-sm md:flex-row md:items-start md:justify-between md:px-16 lg:text-base"
+      >
+        <a href="index.html" class="flex w-36 self-start lg:w-44 2xl:w-52">
+          <img
+            class="object-contain"
+            src="./public/assets/img/logos/logo.png"
+            alt="MediCrest Pharmacy"
+          />
+          <hr
+            class="absolute -right-4 top-1/3 hidden h-1/3 border border-darkText opacity-50 md:block"
+          />
+        </a>
+        <!-- Expanded Navbar -->
+        <div
+          id="expanded-navbar"
+          class="absolute left-0 top-20 z-30 hidden w-full flex-col bg-whiteAlternate px-2 text-center sm:px-8 md:hidden"
+        >
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="index.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Home</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="about.html"
+              class="text-sm text-darkText hover:text-primary"
+              >About Us</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="services.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Services</a
+            >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <a
+              href="contact.html"
+              class="text-sm text-darkText hover:text-primary"
+              >Contact Us</a
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 p-2">
+            <a
+              href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+              target="_blank"
+              class="h-max rounded-full border-2 border-darkText px-1 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2 md:text-sm lg:text-base"
+            >
+              Manage a prescription
+            </a>
+            <a
+              href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+              target="_blank"
+              class="h-max rounded-full border-2 border-darkText px-2 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:text-sm lg:text-base"
+            >
+              Book an Appointment
+            </a>
+          </div>
+        </div>
+        <ul
+          id="navbar-links-menu"
+          class="hidden w-full flex-col items-center justify-center gap-2 md:flex md:h-full md:w-auto md:flex-row md:gap-0 md:space-x-4"
+        >
+          <li>
+            <a href="index.html" class="text-darkText hover:text-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-darkText hover:text-primary"
+              >About Us</a
+            >
+          </li>
+
+          <li>
+            <a href="services.html" class="text-darkText hover:text-primary"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="text-darkText hover:text-primary"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="hidden h-full items-center gap-1 font-semibold tracking-tight md:flex md:gap-2"
+        >
+          <a
+            href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+            target="_blank"
+            class="h-max w-min rounded-full border-2 border-darkText px-1 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 md:px-2 lg:w-max lg:text-sm xl:text-base"
+          >
+            Manage a prescription
+          </a>
+          <a
+            href="https://pharmaconnect.ca/Pharmacies/Detail?storeId=c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
+            target="_blank"
+            class="h-max w-min rounded-full border-2 border-darkText px-2 py-1 text-xs hover:bg-darkText hover:text-whiteAlternate active:scale-95 lg:w-max lg:text-sm xl:text-base"
+          >
+            Book an Appointment
+          </a>
+        </div>
+
+        <div class="absolute right-12 top-1/3 flex items-center md:hidden">
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label for="menu-toggle" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-darkText stroke-darkText"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Temp Banner -->
+
+    <section id="temp-banner">
+      <div
+        class="absolute isolate z-20 flex w-full items-center gap-x-6 overflow-hidden bg-gray-50 px-6 sm:px-3.5 sm:before:flex-1"
+      >
+        <div
+          class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between">
+          <p
+            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+          >
+            <strong>We Are Open Now </strong>
+
+            &nbsp;&nbsp;
+            <span class="hidden md:block"
+              >| <strong>Mon-Fri:</strong> 10:00am to 6:30pm
+              <strong>Sat:</strong> 10:00am to 2:00PM |</span
+            >&nbsp;&nbsp;
+            <strong class="animate-pulse"> Visit Us Today! </strong>
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button
+            id="dismiss-btn"
+            type="button"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          >
+            <span class="sr-only">Dismiss</span>
+            <svg
+              class="h-5 w-5 text-gray-900"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="relative mb-20 w-full px-2 py-1 sm:px-8 md:px-16">
+        <div class="flex w-full border-t border-darkText/40">
+          <div
+            class="relative z-10 mt-16 h-32 overflow-hidden bg-purple-900 md:h-64 md:w-[700px]"
+          >
+            <div
+              class="flex h-full items-center justify-center p-4 text-whiteAlternate"
+            >
+              <h3 class="text-lg font-extrabold tracking-wide md:text-3xl">
+                Frequently Asked Questions
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute -bottom-20 left-0 z-0 flex h-52 w-full items-end justify-start bg-light bg-opacity-35"
+        >
+          <div class="z-10 mb-8 ml-2 h-min sm:ml-8 md:ml-16">
+            <ul class="flex gap-3 text-xs md:text-sm 2xl:text-base">
+              <li class="font-semibold text-darkText">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="text-darkText">&#10148;</li>
+              <li class="cursor-text">FAQs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <section id="faq" class="px-8 py-16 md:px-16">
+      <div class="container mx-auto">
+        <h2
+          class="mb-8 text-center text-2xl font-bold text-darkText md:text-4xl"
+        >
+          MediCrest Pharmacy- Pharmacist Clinic Care
+        </h2>
+        <div class="space-y-4">
+          <details class="rounded-lg bg-white p-6 shadow-md">
+            <summary
+              class="faq-question w-full cursor-pointer font-semibold text-blackAlternate md:text-xl"
+            >
+              What services does your pharmacy offer?
+            </summary>
+            <div
+              class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
+            >
+              Our pharmacy offers a wide range of services to meet your health
+              needs. From vaccinations and medication reviews to travel health
+              consultations and diabetes management, we provide personalized
+              care to support your well-being. Visit us for expert advice and
+              treatment of minor ailments.
+              <br />
+              Go to
+              <a href="services.html" class="text-darkText">Our Services</a>
+              Page to find more about our services
+            </div>
+          </details>
+          <details class="rounded-lg bg-white p-6 shadow-md">
+            <summary
+              class="faq-question w-full cursor-pointer font-semibold text-blackAlternate md:text-xl"
+            >
+              How can I transfer my prescriptions to your pharmacy?
+            </summary>
+            <div
+              class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
+            >
+              Transferring your prescriptions is easy. You can either bring your
+              prescription bottles to our pharmacy, call us with your current
+              pharmacy information, or use our online prescription transfer
+              form.
+            </div>
+          </details>
+
+          <details class="rounded-lg bg-white p-6 shadow-md">
+            <summary
+              class="faq-question w-full cursor-pointer font-semibold text-blackAlternate md:text-xl"
+            >
+              What insurance plans do you accept?
+            </summary>
+            <div
+              class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
+            >
+              We accept most major insurance plans. If you have questions about
+              your specific plan, please contact our pharmacy and we will assist
+              you in verifying your coverage.
+            </div>
+          </details>
+          <details class="rounded-lg bg-white p-6 shadow-md">
+            <summary
+              class="faq-question w-full cursor-pointer font-semibold text-blackAlternate md:text-xl"
+            >
+              Can I get vaccinated at your pharmacy?
+            </summary>
+            <div
+              class="faq-answer mt-2 text-sm font-semibold text-stone-800 md:text-base"
+            >
+              Yes, we provide a range of vaccinations, including flu shots,
+              shingles, pneumonia, and more. No appointment is necessary, but
+              you can schedule a vaccination time that is convenient for you.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer
+      class="relative z-10 mt-24 h-max w-full bg-purple-950 text-white/90"
+    >
+      <div
+        class="flex h-full w-full flex-col rounded-t-3xl bg-purple-950 sm:flex-row"
+      >
+        <div
+          class="flex flex-col justify-between space-y-2 p-4 sm:w-1/2 sm:space-y-0"
+        >
+          <div class="flex w-full justify-between">
+            <div class="h-24 md:h-32">
+              <img
+                class="h-full object-contain"
+                src="./public/assets/img/logos/footer-logo.png"
+                alt=""
+              />
+            </div>
+            <div id="navigate" class="flex flex-col justify-start">
+              <span class="font mb-3">Navigate</span>
+              <div
+                class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
+              >
+                <a href="index.html">Home Page</a>
+                <a href="services.html">Services</a>
+              </div>
+            </div>
+            <div id="about" class="flex flex-col justify-start">
+              <span class="font mb-3">About</span>
+              <div
+                class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
+              >
+                <a href="about.html">About us</a>
+                <a href="reviews.html">Reviews</a>
+              </div>
+            </div>
+            <div id="contact" class="flex flex-col justify-start">
+              <span class="font mb-3">Contact</span>
+              <div
+                class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
+              >
+                <a
+                  href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA"
+                  target="_blank"
+                  >Find Us</a
+                >
+                <a href="faq.html">FAQ</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61559901263742"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/facebook-white.png"
+                alt="Medicrest Pharmacy Facebook Page"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/instagram-white.png"
+                alt="Medicrest Pharmacy Instagram Page"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+              target="_blank"
+              ><img
+                class="h-6"
+                src="./src/assets/img/social/linkedin-white.png"
+                alt="Medicrest Pharmacy Linkedin Page"
+            /></a>
+          </div>
+        </div>
+        <span class="h-[1px] w-full bg-white/60 sm:h-auto sm:w-[1px]"></span>
+        <div class="flex flex-col px-5 py-4 sm:w-1/2 sm:space-y-4 sm:px-10">
+          <div class="flex w-4/5 space-x-2">
+            <span class="text-2xl font-semibold text-white sm:text-4xl"
+              >Newsletter</span
+            >
+            <span class="text-5xl font-semibold text-red-600"> * </span>
+          </div>
+          <p class="text-sm font-thin text-white/60 lg:w-2/3">
+            Sign up for our newsletter to stay updated with exclusive offers,
+            industry insights, and more!
+          </p>
+          <form action="" class="relative mb-2 flex justify-center md:w-2/3">
+            <input
+              type="text"
+              class="block w-full rounded-full bg-white/20 px-2 py-1 text-sm"
+              placeholder="Enter your email"
+            />
+            <button
+              class="absolute right-0.5 top-0.5 h-min rounded-full bg-white bg-gradient-to-br text-xs hover:scale-105 md:text-sm"
+            >
+              <img
+                class="object-contain"
+                src="./src/assets/img/north-east-arrow.svg"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="flex h-1/5 flex-col bg-purple-950">
+        <span class="h-[1px] w-full bg-white/60"></span>
+        <div class="flex w-full justify-between px-4 pt-2">
+          <div class="flex w-2/3 flex-col sm:block sm:w-auto">
+            <span
+              class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
+              >© 2024
+              <a href="index.html" class="text-white hover:underline"
+                >MediCrest Pharmacy</a
+              >
+            </span>
+            <span class="text-xs">All Rights Reserved.</span>
+          </div>
+          <div>
+            <div class="flex w-2/3 flex-col sm:block sm:w-auto">
+              <span
+                class="text-xs text-white/60 sm:text-center sm:text-sm dark:text-gray-400"
+                >Innovatively designed by
+                <a
+                  href="https://urbanwebpixels.com/"
+                  target="_blank"
+                  class="font-semibold"
+                  >Urban Web Pixels</a
+                >
+              </span>
+            </div>
+            <ul
+              class="mt-3 hidden items-center text-xs text-white/60 sm:mt-0 sm:flex-wrap sm:text-sm dark:text-gray-400"
+            >
+              <li>
+                <a href="#" class="me-4 hover:underline md:me-6"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
