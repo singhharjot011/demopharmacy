@@ -73,11 +73,6 @@ dismissBtn.addEventListener("click", (e) => {
 
 // Slider
 const slider = function () {
-  const currentPage = window.location.pathname.split("/").pop();
-
-  if (!currentPage.startsWith("index")) {
-    return;
-  }
   const slides = document.querySelectorAll(".slide");
   const btnLeft = document.querySelector("#arrow-left");
   const btnRight = document.querySelector("#arrow-right");
