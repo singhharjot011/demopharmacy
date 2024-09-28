@@ -70,3 +70,120 @@ imgTargets.forEach((img) => imgObserver.observe(img));
 dismissBtn.addEventListener("click", (e) => {
   tempBanner.classList.add("hidden");
 });
+
+// Slider
+const slider = function () {
+  const currentPage = window.location.pathname.split("/").pop();
+
+  if (!currentPage.startsWith("index")) {
+    return;
+  }
+  const slides = document.querySelectorAll(".slide");
+  const btnLeft = document.querySelector("#arrow-left");
+  const btnRight = document.querySelector("#arrow-right");
+  const dotContainer = document.querySelector("#dots");
+  const carousel = document.querySelector("#hero");
+  let currentSlide = 0;
+  const maxSlide = slides.length;
+  let autoSlideInterval;
+
+  // Functions
+  const createDots = function () {
+    slides.forEach(function (_, i) {
+      dotContainer.insertAdjacentHTML(
+        "beforeend",
+        `<button class="dots__dot" data-slide="${i}" aria-label="${i}"></button>`,
+      );
+    });
+  };
+
+  const activateDot = function (slide) {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Check if the current page is faq.html
+    if (currentPage === "faq.html") {
+      return;
+    }
+    document
+      .querySelectorAll(".dots__dot")
+      .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+    document
+      .querySelector(`.dots__dot[data-slide="${slide}"]`)
+      .classList.add("dots__dot--active");
+  };
+
+  const goToSlide = function (slide) {
+    slides.forEach((s, i) => {
+      if (i === slide) {
+        s.classList.add("active");
+      } else {
+        s.classList.remove("active");
+      }
+    });
+  };
+
+  // Next Slide
+  const nextSlide = () => {
+    if (currentSlide === maxSlide - 1) {
+      currentSlide = 0;
+    } else {
+      currentSlide++;
+    }
+    goToSlide(currentSlide);
+    activateDot(currentSlide);
+  };
+
+  const prevSlide = () => {
+    if (currentSlide === 0) {
+      currentSlide = maxSlide - 1;
+    } else {
+      currentSlide--;
+    }
+    goToSlide(currentSlide);
+    activateDot(currentSlide);
+  };
+
+  const startAutoSlide = () => {
+    autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  };
+
+  const stopAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+  };
+
+  const init = function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    // Check if the current page is faq.html
+    if (currentPage.startsWith("faq")) {
+      return;
+    }
+    createDots();
+    activateDot(0);
+    goToSlide(0); // Initialize the first slide as active
+    startAutoSlide(); // Start automatic sliding
+  };
+  init();
+
+  btnRight.addEventListener("click", nextSlide);
+  btnLeft.addEventListener("click", prevSlide);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") prevSlide();
+    e.key === "ArrowRight" && nextSlide();
+  });
+
+  dotContainer.addEventListener("click", function (e) {
+    if (e.target.classList.contains("dots__dot")) {
+      const slide = Number(e.target.dataset.slide); // Ensure slide is a number
+      console.log(slide); // For debugging
+      goToSlide(slide);
+      activateDot(slide);
+    }
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoSlide); // Pause auto sliding on hover
+  carousel.addEventListener("mouseleave", startAutoSlide); // Resume auto sliding on mouse leave
+};
+
+slider();

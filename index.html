@@ -99,10 +99,6 @@
             src="./public/assets/img/logos/logo.png"
             alt="MediCrest Pharmacy"
           />
-
-          <hr
-            class="absolute -right-4 top-1/3 hidden h-1/3 border border-darkText opacity-50 md:block"
-          />
         </a>
         <!-- Expanded Navbar -->
         <div
@@ -284,16 +280,16 @@
         </div>
         <div class="flex flex-wrap items-center justify-between">
           <p
-            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+            class="flex justify-between text-nowrap text-xs leading-6 text-gray-900 md:text-base"
           >
             <strong>We Are Open Now </strong>
 
             &nbsp;&nbsp;
-            <span class="hidden md:block"
+            <span class="hidden text-nowrap md:block"
               >| <strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
               <strong>Sat:</strong> 10:00 am to 2:00 pm |</span
             >&nbsp;&nbsp;
-            <strong class="animate-pulse"> Visit Us Today! </strong>
+            <strong class="animate-pulse text-nowrap"> Visit Us Today! </strong>
           </p>
         </div>
         <div class="flex flex-1 justify-end">
@@ -318,7 +314,291 @@
       </div>
     </section>
 
-    <section id="hero">
+    <!-- Hero -->
+    <section id="hero" class="">
+      <div
+        id="slider"
+        class="group relative mt-8 flex h-[400px] overflow-hidden bg-gradient-to-b from-transparent via-purple-50 to-indigo-50 md:min-h-[550px] 2xl:min-h-[600px]"
+      >
+        <button
+          id="arrow-left"
+          class="absolute left-6 top-1/2 z-10 -translate-x-16 cursor-pointer group-hover:translate-x-0"
+          aria-label="left arrow"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 -960 960 960"
+            width="48px"
+            fill="#5f6368"
+          >
+            <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+          </svg>
+        </button>
+        <button
+          id="arrow-right"
+          class="absolute right-6 top-1/2 z-10 translate-x-16 cursor-pointer group-hover:translate-x-0"
+          aria-label="right arrow"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 -960 960 960"
+            width="48px"
+            fill="#5f6368"
+          >
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+          </svg>
+        </button>
+        <div id="dots" class="absolute bottom-5 left-1/2 z-10 flex"></div>
+
+        <!-- Slide 1 -->
+        <div id="slide-1" class="slide absolute w-full">
+          <div
+            class="before:content-[' '] relative z-10 flex h-[400px] w-full before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:bg-white/10 before:brightness-110 md:min-h-[550px] 2xl:min-h-[600px]"
+          >
+            <div
+              class="relative z-10 flex h-full w-full flex-col justify-between px-8 py-2 md:flex-row md:px-5 lg:px-10"
+            >
+              <!-- BG PHARM NAME -->
+              <div
+                class="absolute left-0 top-0 flex h-full w-full justify-center"
+              >
+                <div class="flex flex-col">
+                  <h1
+                    class="text-xl font-bold text-blue-950 md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
+                    MediCrest
+                  </h1>
+                  <div
+                    class="relative z-20 text-3xl font-bold text-blue-950 md:text-5xl lg:text-6xl xl:text-8xl"
+                  >
+                    <h1 class="z-20">Pharmacy</h1>
+                    <span
+                      class="absolute bottom-1 left-0 -z-10 h-0.5 w-full bg-[#3ebec4] md:bottom-0.5 md:h-1"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Seniors -->
+              <div
+                class="slide-right relative flex h-full w-1/2 items-center justify-center md:w-1/3"
+              >
+                <div
+                  class="absolute top-10 flex h-max w-full items-center justify-center md:left-8 xl:left-20"
+                >
+                  <div
+                    class="relative z-30 flex h-1/2 w-full flex-col justify-center overflow-hidden rounded-xl border border-indigo-100/80 bg-indigo-50 p-2 lg:p-4"
+                  >
+                    <h3 class="z-30 font-semibold md:text-2xl lg:text-4xl">
+                      Seniors
+                    </h3>
+                    <h3 class="z-30 font-semibold md:text-xl lg:text-3xl">
+                      Save 10%
+                    </h3>
+                    <h3
+                      class="z-30 text-sm font-semibold md:text-base lg:text-xl"
+                    >
+                      The First Wednesday
+                    </h3>
+                    <h3
+                      class="z-30 text-sm font-semibold md:text-base lg:text-xl"
+                    >
+                      of every month
+                    </h3>
+
+                    <img
+                      class="absolute bottom-0 z-0 h-full w-full object-contain md:right-8 md:object-right lg:right-20"
+                      src="./public/assets/img/new/seniors-banner2.png"
+                      alt="Woodlawn Pharmacy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pharmacy Info -->
+
+              <!-- Delivery -->
+              <div
+                class="absolute flex h-full w-max items-center justify-center md:-top-12 md:left-1/3 md:w-1/3"
+              >
+                <div
+                  class="slide-up flex h-full w-full items-center justify-center"
+                >
+                  <div
+                    class="relative z-10 flex h-1/5 flex-col items-start justify-start overflow-hidden rounded-xl border border-indigo-100/80 bg-indigo-50 p-1 lg:p-2"
+                  >
+                    <h3 class="z-10 text-sm font-semibold md:text-base">
+                      Free local prescription delivery
+                    </h3>
+                    <h3 class="z-10 text-xs font-semibold">
+                      See store for details
+                    </h3>
+
+                    <img
+                      class="absolute -bottom-6 right-0 z-0 h-20 w-28 object-contain object-right lg:h-28 lg:w-32"
+                      src="./public/assets/img/new/delivery.png"
+                      alt="Woodlawn Pharmacy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+              <div
+                class="relative mb-14 flex h-full w-1/2 flex-col items-center self-end md:mb-4 md:w-1/3 md:justify-start md:self-auto"
+              >
+                <div
+                  class="h-48 w-2/3 overflow-hidden rounded-lg md:right-20 md:h-[300px] md:w-[300px] lg:right-40 lg:h-[400px] lg:w-[400px] xl:right-2"
+                >
+                  <img
+                    class="lazy-img h-full w-full object-contain object-center"
+                    src="./public/assets/img/new/test_enhanced.png"
+                    data-src="./public/assets/img/new/test_enhanced.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-b-3xl bg-gradient-to-t from-black/10 p-2 md:p-4"
+                >
+                  <div class="flex items-baseline gap-2">
+                    <h2
+                      class="z-50 text-base font-semibold md:text-xl lg:text-2xl"
+                    >
+                      Sheena Thomas
+                    </h2>
+                    <p class="text-xs md:text-sm lg:text-base">
+                      B.Sc. Pharm, R.Ph
+                    </p>
+                  </div>
+                  <div
+                    class="flex w-full flex-col items-start justify-start text-xs md:text-sm lg:text-base"
+                  >
+                    <p>Minor Ailment prescriber</p>
+                    <p>Injection & Immunization certified</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Icons -->
+            <div
+              class="absolute bottom-0 left-0 z-30 flex h-full w-full items-end justify-start px-8 pb-5 md:px-10 md:py-8 lg:px-20 lg:py-14"
+            >
+              <div class="z-30 flex w-full space-x-6 lg:space-x-16">
+                <div class="z-30 flex">
+                  <div class="relative z-30 flex items-center gap-2 font-bold">
+                    <div
+                      class="z-30 flex h-6 w-6 items-center justify-center rounded-full bg-blue-950 p-1 md:h-10 md:w-10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#ffff"
+                      >
+                        <path
+                          d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-80 92L160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11Zm200-528 77-44-237-137-78 45 238 136Zm-160 93 78-45-237-137-78 45 237 137Z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="z-30 flex flex-col text-xs md:text-sm lg:text-base"
+                    >
+                      <p class="z-20">Delivery to</p>
+                      <p class="z-20">your doorstep</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="flex">
+                  <div class="relative z-20 flex items-center gap-2 font-bold">
+                    <div
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-blue-950 p-1 md:h-10 md:w-10"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#fff"
+                      >
+                        <path
+                          d="m320-60-80-60v-160h-40q-33 0-56.5-23.5T120-360v-300q-17 0-28.5-11.5T80-700q0-17 11.5-28.5T120-740h120v-60h-20q-17 0-28.5-11.5T180-840q0-17 11.5-28.5T220-880h120q17 0 28.5 11.5T380-840q0 17-11.5 28.5T340-800h-20v60h120q17 0 28.5 11.5T480-700q0 17-11.5 28.5T440-660v300q0 33-23.5 56.5T360-280h-40v220ZM200-360h160v-60h-70q-12 0-21-9t-9-21q0-12 9-21t21-9h70v-60h-70q-12 0-21-9t-9-21q0-12 9-21t21-9h70v-60H200v300ZM600-80q-33 0-56.5-23.5T520-160v-260q0-29 10-48t21-33q11-14 20-22.5t9-16.5v-20q-17 0-28.5-11.5T540-600q0-17 11.5-28.5T580-640h200q17 0 28.5 11.5T820-600q0 17-11.5 28.5T780-560v20q0 8 10 18t22 24q11 14 19.5 33t8.5 45v260q0 33-23.5 56.5T760-80H600Zm0-320h160v-20q0-15-9-26t-20-24q-11-13-21-29t-10-41v-20h-40v20q0 24-9.5 40T630-471q-11 13-20.5 24.5T600-420v20Zm0 120h160v-60H600v60Zm0 120h160v-60H600v60Zm0-120h160-160Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex flex-col text-xs md:text-sm lg:text-base">
+                      <p class="z-20">Flu Vaccines Available Late October</p>
+                      <p class="z-20 text-xs lg:text-sm">
+                        No appointment needed.
+                      </p>
+                      <p class="z-20 text-xs lg:text-sm">
+                        Free for all Ontarians.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slide-2" class="slide absolute w-full">
+          <div
+            class="before:content-[' '] relative z-10 flex h-[400px] w-full before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:bg-cover before:bg-center before:brightness-110 md:min-h-[550px] 2xl:min-h-[600px]"
+          >
+            <div class="h-full w-full">
+              <img
+                class="lazy h-full w-full object-cover object-center"
+                loading="lazy"
+                src="/public/assets/img/new/newslide_enhanced.jpg"
+                data-src="/public/assets/img/new/newslide_enhanced.jpg"
+                alt="Pharmacy Interior"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="slide-3" class="slide absolute w-full">
+          <div
+            class="before:content-[' '] relative z-10 flex h-[400px] w-full before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:bg-cover before:bg-center before:brightness-110 md:min-h-[550px] 2xl:min-h-[600px]"
+          >
+            <div class="h-full w-full">
+              <img
+                class="lazy h-full w-full object-cover object-top"
+                loading="lazy"
+                src="/public/assets/img/new/inside.jpg"
+                data-src="/public/assets/img/new/inside.jpg"
+                alt="Pharmacy Interior"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="slide-4" class="slide absolute w-full">
+          <div
+            class="before:content-[' '] relative z-10 flex h-[400px] w-full before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:bg-cover before:bg-center before:brightness-110 md:min-h-[550px] 2xl:min-h-[600px]"
+          >
+            <div class="h-full w-full">
+              <img
+                class="lazy h-full w-full object-cover object-top"
+                loading="lazy"
+                src="/public/assets/img/new/interior.jpg"
+                data-src="/public/assets/img/new/interior.jpg"
+                alt="Pharmacy Exterior"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="hero">
       <div class="mb-16 w-full px-2 sm:px-8 lg:px-16">
         <div
           class="flex w-full flex-col-reverse items-center justify-between border-t border-darkText/40 md:flex-row lg:ml-10"
@@ -382,7 +662,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="services" class="overflow-hidden">
       <div class="flex w-full flex-col md:flex-row">
@@ -728,9 +1008,9 @@
           </p>
         </div>
         <!-- Reviews Area -->
-        <div class="flex flex-col items-center p-5 md:flex-row">
+        <div class="flex w-full flex-col items-center p-5 md:flex-row">
           <!-- Business Name and Info -->
-          <div class="mt-4 flex gap-2 px-2 md:mt-0">
+          <div class="mt-4 flex gap-2 px-2 md:mt-0 md:w-1/4">
             <div class="w-max">
               <img
                 class="h-14 w-14 rounded-full bg-purple-100 object-contain shadow-md"
@@ -798,7 +1078,7 @@
                   />
                 </svg>
               </div>
-              <span class="hidden text-xs">Based on {x} Reviews</span>
+              <span class="text-xs">Based on 20+ Reviews</span>
               <a
                 href="https://search.google.com/local/writereview?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
                 target="_blank"
@@ -830,7 +1110,7 @@
                 </div>
               </a>
               <img
-                src="./public/assets/img/qrcode/google-reviews-qr-code.png"
+                src="./public/assets/img/qrcode/adobe-qr-code-medicrest.png"
                 class="mt-4 h-24 w-24 self-center text-stone-300"
                 alt="QR Code"
               />
@@ -838,108 +1118,132 @@
           </div>
           <!-- Client's Reviews -->
           <div
-            class="no-scrollbar container relative z-10 my-4 flex hidden items-start overflow-x-scroll scroll-smooth xl:justify-center"
+            class="container relative z-10 my-4 flex items-start overflow-x-scroll scroll-smooth md:w-3/4"
             id="feedback-div"
           >
             <!-- 1 -->
-            <div class="flex w-72 flex-col justify-center rounded-lg p-4">
-              <article
-                class="bg-grey mx-auto flex flex-col items-start justify-start rounded-xl p-5 text-xs"
+            <div>
+              <a
+                href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+                target="_blank"
+                class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
               >
-                <div class="mb-4 flex items-center space-x-4">
-                  <img
-                    class="h-10 w-10 rounded-full"
-                    src="./public/assets/img/temp/avatar-anisha.png"
-                    alt=""
-                  />
-                  <div class="text-blackAlternative space-y-1 font-medium">
-                    <p>Alisha Lee</p>
+                <article
+                  class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
+                >
+                  <div
+                    class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                  >
+                    <img
+                      class="h-10 w-10 rounded-full object-cover object-center"
+                      src="./public/assets/img/reviews/k.png"
+                      alt=""
+                    />
+                    <div class="text-blackAlternative space-y-1 font-semibold">
+                      <p>Kelly Howell</p>
+                    </div>
                   </div>
-                </div>
-                <div class="mb-1 flex items-center">
-                  <svg
-                    class="mr-1 h-4 w-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
+                  <div
+                    class="mb-1 flex w-full items-center justify-center md:justify-start"
                   >
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg
-                    class="mr-1 h-4 w-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg
-                    class="mr-1 h-4 w-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg
-                    class="mr-1 h-4 w-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg
-                    class="mr-1 h-4 w-4 text-gray-300 dark:text-gray-500"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                </div>
-                <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
-                  <p>
-                    <time datetime="2023-03-03 19:00">March 3, 2023</time>
+                    <svg
+                      class="mr-1 h-4 w-4 text-yellow-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="mr-1 h-4 w-4 text-yellow-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="mr-1 h-4 w-4 text-yellow-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="mr-1 h-4 w-4 text-yellow-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="mr-1 h-4 w-4 text-yellow-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                  </div>
+                  <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
+                    <p>
+                      <time datetime="2023-03-03 19:00">September, 2024</time>
+                    </p>
+                  </footer>
+                  <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                    You shouldn't go anywhere else. Sheena is professional,
+                    courteous, and knowledgeable. Afraid of change?... Don't be;
+                    she made this move for our family from the big conglomerate
+                    seemless. She continuously goes way above and beyond and
+                    remembers everything! If 'knowing you' is important, great
+                    selection, quick reply, at your fingertips then call or drop
+                    in today
                   </p>
-                </footer>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">
-                  The staff are knowledgeable and friendly, making my visit a
-                  pleasant experience every time.
-                </p>
-              </article>
+                </article>
+              </a>
             </div>
+
             <!-- 2 -->
-            <div class="flex w-72 flex-col justify-center rounded-lg p-4">
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
               <article
-                class="bg-grey mx-auto flex flex-col items-start justify-start rounded-xl p-5 text-xs"
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
               >
-                <div class="mb-4 flex items-center space-x-4">
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
                   <img
-                    class="h-10 w-10 rounded-full"
-                    src="./public/assets/img/temp/avatar-shanai.png"
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/j.png"
                     alt=""
                   />
-                  <div class="text-blackAlternative space-y-1 font-medium">
-                    <p>Shanai Roberts</p>
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>JoAnne Fuller</p>
                   </div>
                 </div>
-                <div class="mb-1 flex items-center">
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
                   <svg
                     class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
@@ -985,7 +1289,7 @@
                     />
                   </svg>
                   <svg
-                    class="mr-1 h-4 w-4 text-gray-300 dark:text-gray-500"
+                    class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -996,30 +1300,43 @@
                     />
                   </svg>
                 </div>
-                <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
                   <p>
-                    <time datetime="2023-03-03 19:00">June 17, 2024</time>
+                    <time datetime="2023-03-03 19:00">September, 2024</time>
                   </p>
                 </footer>
-                <p class="mb-2 text-gray-500 dark:text-gray-400"></p>
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Sheena & MediCrest Pharmacy are top notch. Efficient,
+                  knowledgeable and caring. I cannot recommend them highly
+                  enough. Sheena takes care of everything for me, goes above and
+                  beyond. Have complete trust in her.
+                </p>
               </article>
-            </div>
+            </a>
             <!-- 3 -->
-            <div class="flex w-72 flex-col justify-center rounded-lg p-4">
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
               <article
-                class="bg-grey mx-auto flex flex-col items-start justify-start rounded-xl p-5 text-xs"
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
               >
-                <div class="mb-4 flex items-center space-x-4">
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
                   <img
-                    class="h-10 w-10 rounded-full"
-                    src="./public/assets/img/temp/avatar-ali.png"
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/c.png"
                     alt=""
                   />
-                  <div class="text-blackAlternative space-y-1 font-medium">
-                    <p>Lia</p>
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>Chris Gadgets</p>
                   </div>
                 </div>
-                <div class="mb-1 flex items-center">
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
                   <svg
                     class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
@@ -1065,7 +1382,7 @@
                     />
                   </svg>
                   <svg
-                    class="mr-1 h-4 w-4 text-gray-300 dark:text-gray-500"
+                    class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -1076,33 +1393,44 @@
                     />
                   </svg>
                 </div>
-                <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
                   <p>
-                    <time datetime="2023-03-03 19:00">March 3, 2023</time>
+                    <time datetime="2023-03-03 19:00">August, 2024</time>
                   </p>
                 </footer>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">
-                  Excellent customer service and knowledgeable pharmacists at
-                  DEF Pharmacy. Highly recommended!
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Very happy to follow Sheena to her new pharmacy. One of the
+                  few to actually talk to us and get to know us at her last
+                  place, and more than happy to follow her and support her new
+                  business. Highly recommend to anyone looking for a great
+                  pharmacist!!!
                 </p>
               </article>
-            </div>
+            </a>
             <!-- 4 -->
-            <div class="flex w-72 flex-col justify-center rounded-lg p-4">
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
               <article
-                class="bg-grey mx-auto flex flex-col items-start justify-start rounded-xl p-5 text-xs"
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
               >
-                <div class="mb-4 flex items-center space-x-4">
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
                   <img
-                    class="h-10 w-10 rounded-full"
-                    src="./public/assets/img/temp/avatar-richard.png"
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/m.png"
                     alt=""
                   />
-                  <div class="text-blackAlternative space-y-1 font-medium">
-                    <p>Bob T</p>
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>Marifa Mac MacMullen</p>
                   </div>
                 </div>
-                <div class="mb-1 flex items-center">
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
                   <svg
                     class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
@@ -1148,7 +1476,7 @@
                     />
                   </svg>
                   <svg
-                    class="mr-1 h-4 w-4 text-gray-300 dark:text-gray-500"
+                    class="mr-1 h-4 w-4 text-yellow-300"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -1159,17 +1487,298 @@
                     />
                   </svg>
                 </div>
-                <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
                   <p>
-                    <time datetime="2023-03-03 19:00">March 5, 2024</time>
+                    <time datetime="2023-03-03 19:00">August, 2024</time>
                   </p>
                 </footer>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">
-                  I always trust MediCrest Pharmacy for my healthcare needs.
-                  They have a wide range of products and helpful staff.
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Sheena has been looking after our family needs for many years.
+                  She has helped our family thru the hardest and difficult
+                  times. Sheena attended to all our medicines and dealt with the
+                  many specialists, doctors and hospitals our family has needed.
+                  She explained complicated meds simply so we understood. Most
+                  importantly Sheena takes the time to care. She offers more
+                  than just the prescribed medication . Her attentiveness,
+                  kindness and compassion along with her smile always helped
+                  with the healing. Excellent service!
                 </p>
               </article>
-            </div>
+            </a>
+            <!--5 -->
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
+              <article
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
+              >
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
+                  <img
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/r.png"
+                    alt=""
+                  />
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>rob marchildon</p>
+                  </div>
+                </div>
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    <time datetime="2023-03-03 19:00">September, 2024</time>
+                  </p>
+                </footer>
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Sheena is the best! She knows how important it is to build a
+                  relationship with her clients. She always goes above and
+                  beyond! Her knowledge and expertise are exceptional! I would
+                  highly recommend her to anyone!
+                </p>
+              </article>
+            </a>
+            <!-- 6 -->
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
+              <article
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
+              >
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
+                  <img
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/l.png"
+                    alt=""
+                  />
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>Lewis Park</p>
+                  </div>
+                </div>
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    <time datetime="2023-03-03 19:00">July, 2024</time>
+                  </p>
+                </footer>
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Sheena is the most kind and compassionate pharmacist you will
+                  ever meet. She truly cares for her patients. One of a kind!
+                </p>
+              </article>
+            </a>
+            <!-- 7 -->
+            <a
+              href="https://search.google.com/local/reviews?placeid=ChIJ92L0fgABK4gR2ZYS2axMJSA"
+              target="_blank"
+              class="flex w-72 flex-col items-center justify-center rounded-lg p-4"
+            >
+              <article
+                class="bg-grey mx-auto flex w-72 flex-col rounded-xl p-5 text-xs md:items-start md:justify-start"
+              >
+                <div
+                  class="mb-2 flex items-center justify-center space-x-4 md:justify-start"
+                >
+                  <img
+                    class="h-10 w-10 rounded-full object-cover object-center"
+                    src="./public/assets/img/reviews/c.png"
+                    alt=""
+                  />
+                  <div class="text-blackAlternative space-y-1 font-semibold">
+                    <p>Carter Dodds</p>
+                  </div>
+                </div>
+                <div
+                  class="mb-1 flex w-full items-center justify-center md:justify-start"
+                >
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="mr-1 h-4 w-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <footer class="mb-3 text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    <time datetime="2023-03-03 19:00">July, 2024</time>
+                  </p>
+                </footer>
+                <p class="mb-2 line-clamp-6 text-gray-500 dark:text-gray-400">
+                  Great Pharmacy. Sheena is absolutely awesome.
+                </p>
+              </article>
+            </a>
           </div>
         </div>
       </div>
