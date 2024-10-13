@@ -3865,6 +3865,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-4 {
+    height: 1rem;
+  }
+
   .md\:min-h-\[550px\] {
     min-height: 550px;
   }

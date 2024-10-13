@@ -43,51 +43,57 @@
   <body>
     <header class="flex flex-col items-center justify-center">
       <div
-        class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
+        class="mx-auto flex w-full items-center text-nowrap bg-light bg-opacity-35 px-1 py-1 text-xs text-darkText md:px-16 md:text-base"
       >
-        <a href="tel:519-398-2323" class="flex md:gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 md:h-6"
-            viewBox="0 -960 960 960"
-            fill="#553159"
+        <div class="flex w-full items-center justify-center">
+          <a
+            href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA"
+            class="flex"
+            target="_blank"
           >
-            <path
-              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
-            />
-          </svg>
-          <span>519-398-2323</span>
-        </a>
-        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
-          <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
-            28 Mill St #104, Orangeville, ON L9W 2M3</a
+            <span> 28 Mill St #104, Orangeville, ON</span>
+            <span class="hidden md:block"> L9W 2M3</span> &nbsp;</a
+          ><a
+            href="tel:519-398-2323"
+            class="flex items-center font-extrabold md:gap-1"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-3 md:h-4"
+              viewBox="0 -960 960 960"
+              fill="#553159"
+            >
+              <path
+                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
+              />
+            </svg>
+            <span>&nbsp;519-398-2323</span>
+          </a>
         </div>
-        <div>
-          <div class="flex space-x-1 md:space-x-4">
-            <a
-              href="https://www.facebook.com/profile.php?id=61559901263742"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/facebook.png"
-                alt="Medicrest Pharmacy Facebook Page"
-            /></a>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/instagram.png"
-                alt="Medicrest Pharmacy Instagram Page"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/linkedin.png"
-                alt="Medicrest Pharmacy Linkedin Page"
-            /></a>
-          </div>
+
+        <div class="hidden space-x-1 md:flex md:space-x-4">
+          <a
+            href="https://www.facebook.com/profile.php?id=61559901263742"
+            target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/facebook.png"
+              alt="Medicrest Pharmacy Facebook Page"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/instagram.png"
+              alt="Medicrest Pharmacy Instagram Page"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+            target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/linkedin.png"
+              alt="Medicrest Pharmacy Linkedin Page"
+          /></a>
         </div>
       </div>
       <nav
@@ -280,16 +286,22 @@
         </div>
         <div class="flex flex-wrap items-center justify-between">
           <p
-            class="flex justify-between text-nowrap text-xs leading-6 text-gray-900 md:text-base"
+            class="hidden justify-between text-nowrap text-xs leading-6 text-gray-900 md:flex md:text-base"
           >
-            <strong>We Are Open Now </strong>
-
             &nbsp;&nbsp;
-            <span class="hidden text-nowrap md:block"
-              >| <strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
+            <span class="text-nowrap"
+              ><strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
               <strong>Sat:</strong> 10:00 am to 2:00 pm |</span
             >&nbsp;&nbsp;
-            <strong class="animate-pulse text-nowrap"> Visit Us Today! </strong>
+            <strong class="text-nowrap">Closed Sundays & Stat Holidays</strong>
+          </p>
+          <p
+            class="flex justify-between text-nowrap text-xs leading-6 text-gray-900 md:hidden md:text-base"
+          >
+            &nbsp;&nbsp;
+            <span class="text-nowrap"
+              ><strong>M-F:</strong> 10am-6:30pm <strong>Sat:</strong> 10am-2pm
+            </span>
           </p>
         </div>
         <div class="flex flex-1 justify-end">
