@@ -43,51 +43,57 @@
   <body>
     <header class="flex flex-col items-center justify-center">
       <div
-        class="mx-auto flex w-full items-center justify-between text-nowrap bg-light bg-opacity-35 px-1 py-1 text-center text-[0.5rem] text-darkText sm:text-[0.6rem] md:px-16 md:text-base"
+        class="mx-auto flex w-full items-center text-nowrap bg-light bg-opacity-35 px-1 py-1 text-xs text-darkText md:px-16 md:text-base"
       >
-        <a href="tel:519-398-2323" class="flex md:gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 md:h-6"
-            viewBox="0 -960 960 960"
-            fill="#553159"
+        <div class="flex w-full items-center justify-center">
+          <a
+            href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA"
+            class="flex"
+            target="_blank"
           >
-            <path
-              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
-            />
-          </svg>
-          <span>519-398-2323</span>
-        </a>
-        <div class="md:mr-10 lg:mr-44 xl:mr-52 2xl:mr-44">
-          <a href="https://maps.app.goo.gl/XXHvTbFvi3K3dYRZA" target="_blank">
-            28 Mill St #104, Orangeville, ON L9W 2M3</a
+            <span> 28 Mill St #104, Orangeville, ON</span>
+            <span class="hidden md:block"> L9W 2M3</span> &nbsp;</a
+          ><a
+            href="tel:519-398-2323"
+            class="flex items-center font-extrabold md:gap-1"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-3 md:h-4"
+              viewBox="0 -960 960 960"
+              fill="#553159"
+            >
+              <path
+                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
+              />
+            </svg>
+            <span>&nbsp;519-398-2323</span>
+          </a>
         </div>
-        <div>
-          <div class="flex space-x-1 md:space-x-4">
-            <a
-              href="https://www.facebook.com/profile.php?id=61559901263742"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/facebook.png"
-                alt="Medicrest Pharmacy Facebook Page"
-            /></a>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/instagram.png"
-                alt="Medicrest Pharmacy Instagram Page"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/linkedin.png"
-                alt="Medicrest Pharmacy Linkedin Page"
-            /></a>
-          </div>
+
+        <div class="hidden space-x-1 md:flex md:space-x-4">
+          <a
+            href="https://www.facebook.com/profile.php?id=61559901263742"
+            target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/facebook.png"
+              alt="Medicrest Pharmacy Facebook Page"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/instagram.png"
+              alt="Medicrest Pharmacy Instagram Page"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+            target="_blank"
+            ><img
+              class="h-6"
+              src="./src/assets/img/social/linkedin.png"
+              alt="Medicrest Pharmacy Linkedin Page"
+          /></a>
         </div>
       </div>
       <nav
@@ -135,6 +141,34 @@
               class="text-sm text-darkText hover:text-primary"
               >Contact Us</a
             >
+          </div>
+          <div class="border-b border-darkText/40 p-2">
+            <div
+              class="flex items-center justify-center space-x-1 md:hidden md:space-x-4"
+            >
+              <a
+                href="https://www.facebook.com/profile.php?id=61559901263742"
+                target="_blank"
+                ><img
+                  class="h-6"
+                  src="./src/assets/img/social/facebook.png"
+                  alt="Medicrest Pharmacy Facebook Page"
+              /></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><img
+                  class="h-6"
+                  src="./src/assets/img/social/instagram.png"
+                  alt="Medicrest Pharmacy Instagram Page"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+                target="_blank"
+                ><img
+                  class="h-6"
+                  src="./src/assets/img/social/linkedin.png"
+                  alt="Medicrest Pharmacy Linkedin Page"
+              /></a>
+            </div>
           </div>
           <div class="flex flex-col items-center gap-2 p-2">
             <a
@@ -283,16 +317,22 @@
         </div>
         <div class="flex flex-wrap items-center justify-between">
           <p
-            class="flex justify-between text-xs leading-6 text-gray-900 md:text-base"
+            class="hidden justify-between text-nowrap text-xs leading-6 text-gray-900 md:flex md:text-base"
           >
-            <strong>We Are Open Now </strong>
-
             &nbsp;&nbsp;
-            <span class="hidden md:block"
-              >| <strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
+            <span class="text-nowrap"
+              ><strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
               <strong>Sat:</strong> 10:00 am to 2:00 pm |</span
             >&nbsp;&nbsp;
-            <strong class="animate-pulse"> Visit Us Today! </strong>
+            <strong class="text-nowrap">Closed Sundays & Stat Holidays</strong>
+          </p>
+          <p
+            class="flex justify-between text-nowrap text-xs leading-6 text-gray-900 md:hidden md:text-base"
+          >
+            &nbsp;&nbsp;
+            <span class="text-nowrap"
+              ><strong>M-F:</strong> 10am-6:30pm <strong>Sat:</strong> 10am-2pm
+            </span>
           </p>
         </div>
         <div class="flex flex-1 justify-end">
@@ -585,16 +625,29 @@
       <div
         class="flex h-full w-full flex-col rounded-t-3xl bg-purple-950 sm:flex-row"
       >
-        <div
-          class="flex flex-col justify-between space-y-2 p-4 sm:w-1/2 sm:space-y-0"
-        >
-          <div class="flex w-full justify-between">
-            <div class="h-24 md:h-32">
-              <img
-                class="h-full object-contain"
-                src="./public/assets/img/logos/footer-logo.png"
-                alt=""
-              />
+        <div class="flex w-full flex-col justify-between px-2 py-2 md:px-16">
+          <div class="flex w-full items-center justify-between">
+            <div
+              class="h-24 flex-col rounded-xl bg-white/90 p-1 md:h-32 md:p-2"
+            >
+              <div class="flex flex-col">
+                <h1 class="text-[0.5rem] font-bold text-blue-950 md:text-xs">
+                  MediCrest
+                </h1>
+                <div class="t relative z-20 font-bold text-blue-950">
+                  <h1 class="z-20 text-[0.7rem] md:text-sm">Pharmacy</h1>
+                  <span
+                    class="absolute bottom-1 left-0 -z-10 h-[1px] w-full bg-[#3ebec4] md:bottom-0.5 md:h-0.5"
+                  ></span>
+                </div>
+              </div>
+              <div class="h-2/3">
+                <img
+                  class="h-full w-full object-contain"
+                  src="/public/assets/img/logos/fav-icon.png"
+                  alt=""
+                />
+              </div>
             </div>
             <div id="navigate" class="flex flex-col justify-start">
               <span class="font mb-3">Navigate</span>
@@ -611,7 +664,7 @@
                 class="flex flex-col space-y-1 text-xs text-white/60 lg:text-sm"
               >
                 <a href="about.html">About us</a>
-                <a href="reviews.html">Reviews</a>
+                <a href="/#feedback">Reviews</a>
               </div>
             </div>
             <div id="contact" class="flex flex-col justify-start">
@@ -627,33 +680,35 @@
                 <a href="faq.html">FAQ</a>
               </div>
             </div>
-          </div>
-          <div class="flex space-x-4">
-            <a
-              href="https://www.facebook.com/profile.php?id=61559901263742"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/facebook-white.png"
-                alt="Medicrest Pharmacy Facebook Page"
-            /></a>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/instagram-white.png"
-                alt="Medicrest Pharmacy Instagram Page"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
-              target="_blank"
-              ><img
-                class="h-6"
-                src="./src/assets/img/social/linkedin-white.png"
-                alt="Medicrest Pharmacy Linkedin Page"
-            /></a>
+            <div id="social-media" class="flex flex-col justify-start">
+              <div class="flex flex-col md:flex-row md:space-x-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61559901263742"
+                  target="_blank"
+                  ><img
+                    class="h-6"
+                    src="./src/assets/img/social/facebook-white.png"
+                    alt="Medicrest Pharmacy Facebook Page"
+                /></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><img
+                    class="h-6"
+                    src="./src/assets/img/social/instagram-white.png"
+                    alt="Medicrest Pharmacy Instagram Page"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/sheena-thomas-a9aab825/"
+                  target="_blank"
+                  ><img
+                    class="h-6"
+                    src="./src/assets/img/social/linkedin-white.png"
+                    alt="Medicrest Pharmacy Linkedin Page"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
-        <span class="h-[1px] w-full bg-white/60 sm:h-auto sm:w-[1px]"></span>
+        <!-- <span class="h-[1px] w-full bg-white/60 sm:h-auto sm:w-[1px]"></span>
         <div class="flex flex-col px-5 py-4 sm:w-1/2 sm:space-y-4 sm:px-10">
           <div class="flex w-4/5 space-x-2">
             <span class="text-2xl font-semibold text-white sm:text-4xl"
@@ -681,7 +736,7 @@
               />
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
       <div class="flex h-1/5 flex-col bg-purple-950">
         <span class="h-[1px] w-full bg-white/60"></span>
