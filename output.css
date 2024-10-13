@@ -2858,6 +2858,10 @@ video {
   padding-top: 6rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3928,6 +3932,11 @@ video {
     top: 0px;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -4114,6 +4123,10 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-between {
