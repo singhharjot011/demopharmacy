@@ -21,7 +21,7 @@
 }
 
 .active {
-  @apply text-darkText hover:text-opacity-70;
+  @apply font-extrabold text-darkText hover:text-opacity-70;
 }
 
 .slide-right {
@@ -72,7 +72,6 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
-
 
 /* Dots */
 .dots__dot {
