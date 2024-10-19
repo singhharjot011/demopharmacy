@@ -77,13 +77,13 @@
             target="_blank"
             ><img
               class="h-6"
-              src="./src/assets/img/social/facebook.png"
+              src="./public/assets/img/social/facebook.png"
               alt="Medicrest Pharmacy Facebook Page"
           /></a>
           <a href="https://www.instagram.com" target="_blank"
             ><img
               class="h-6"
-              src="./src/assets/img/social/instagram.png"
+              src="./public/assets/img/social/instagram.png"
               alt="Medicrest Pharmacy Instagram Page"
           /></a>
           <a
@@ -91,7 +91,7 @@
             target="_blank"
             ><img
               class="h-6"
-              src="./src/assets/img/social/linkedin.png"
+              src="./public/assets/img/social/linkedin.png"
               alt="Medicrest Pharmacy Linkedin Page"
           /></a>
         </div>
@@ -148,13 +148,13 @@
                 target="_blank"
                 ><img
                   class="h-6"
-                  src="./src/assets/img/social/facebook.png"
+                  src="./public/assets/img/social/facebook.png"
                   alt="Medicrest Pharmacy Facebook Page"
               /></a>
               <a href="https://www.instagram.com" target="_blank"
                 ><img
                   class="h-6"
-                  src="./src/assets/img/social/instagram.png"
+                  src="./public/assets/img/social/instagram.png"
                   alt="Medicrest Pharmacy Instagram Page"
               /></a>
               <a
@@ -162,7 +162,7 @@
                 target="_blank"
                 ><img
                   class="h-6"
-                  src="./src/assets/img/social/linkedin.png"
+                  src="./public/assets/img/social/linkedin.png"
                   alt="Medicrest Pharmacy Linkedin Page"
               /></a>
             </div>
@@ -254,7 +254,7 @@
 
     <section id="temp-banner">
       <div
-        class="absolute isolate z-20 flex w-full items-center gap-x-6 overflow-hidden bg-gray-50 px-6 sm:px-3.5 sm:before:flex-1"
+        class="absolute isolate z-20 flex w-full items-center overflow-hidden bg-gray-50 sm:px-3.5 sm:before:flex-1 md:gap-x-6 md:px-6"
       >
         <div
           class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -312,7 +312,7 @@
             "
           ></div>
         </div>
-        <div class="flex flex-wrap items-center justify-between">
+        <div class="flex flex-wrap md:items-center md:justify-between">
           <p
             class="hidden justify-between text-nowrap text-xs leading-6 text-gray-900 md:flex md:text-base"
           >
@@ -321,14 +321,17 @@
               ><strong>Mon-Fri:</strong> 10:00 am to 6:30 pm
               <strong>Sat:</strong> 10:00 am to 2:00 pm |</span
             >&nbsp;&nbsp;
-            <strong class="text-nowrap">Closed Sundays & Stat Holidays</strong>
+            <strong class="text-nowrap"
+              >Closed Sundays & Public Holidays</strong
+            >
           </p>
           <p
             class="flex justify-between text-nowrap text-xs leading-6 text-gray-900 md:hidden md:text-base"
           >
-            &nbsp;&nbsp;
+            &nbsp;
             <span class="text-nowrap"
-              ><strong>M-F:</strong> 10am-6:30pm <strong>Sat:</strong> 10am-2pm
+              ><strong>M-F:</strong> 10am-6:30pm <strong>Sat:</strong>10am-2pm |
+              <span class="text-[0.6rem]">Closed Sun & Public Holidays</span>
             </span>
           </p>
         </div>
@@ -423,7 +426,7 @@
 
               <!-- Seniors -->
               <div
-                class="slide-right relative flex h-full w-1/2 items-center justify-center md:w-1/3"
+                class="slide-right relative flex h-full w-1/2 items-center justify-center md:w-1/4"
               >
                 <div
                   class="absolute top-14 flex w-full items-start justify-center md:left-8 md:h-1/3 xl:left-20"
@@ -454,7 +457,7 @@
                     </h3>
 
                     <img
-                      class="absolute bottom-0 right-0 z-0 h-32 w-max object-contain md:right-8 md:h-52 md:object-right lg:right-20"
+                      class="absolute bottom-0 right-0 z-0 h-32 w-full object-contain md:h-52"
                       src="/public/assets/img/new/seniors-banner2.webp"
                       alt="Woodlawn Pharmacy"
                     />
@@ -658,9 +661,9 @@
               />
             </div>
           </div>
-        </div>
+        </div> 
 
-        <!--  -->
+        
       </div>
     </section>
 
@@ -671,7 +674,7 @@
         class="absolute left-1/4 top-32 z-0 h-full w-full overflow-hidden lg:left-1/3"
       >
         <img
-          src="/src/assets/img1/new/flu.avif"
+          src="/public/assets/img/new/flu.avif"
           class="h-full w-full object-contain object-left"
           alt="Flu"
         />
@@ -775,7 +778,7 @@
                 <a
                   href="https://pharmaconnect.ca/Appointment/c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
                   target="_blank"
-                  class="w-max rounded-lg bg-lime-950 px-2 py-2 font-semibold text-white transition duration-300 ease-in-out hover:bg-lime-600 hover:shadow-md"
+                  class="w-max rounded-lg bg-red-600 px-2 py-2 font-semibold text-neutral-100 transition duration-300 ease-in-out hover:bg-red-700 hover:shadow-md"
                 >
                   Schedule Booking
                 </a>
@@ -929,7 +932,8 @@
           </div>
         </div>
 
-        <div class="flex h-[430px] w-full md:h-[600px] md:w-1/2">
+        <!-- Desktop -->
+        <div class="hidden h-[430px] w-full md:flex md:h-[600px] md:w-1/2">
           <div
             class="relative z-0 flex h-full w-1/2 bg-purple-950 text-whiteAlternate"
           >
@@ -944,7 +948,7 @@
               <div class="absolute bottom-0 right-0 h-full w-full">
                 <img
                   class="absolute bottom-0 right-0 h-2/3 w-full object-contain md:h-full md:w-full"
-                  src="/src/assets/img/pharmacy/services.png"
+                  src="/public/assets/img/pharmacy/services.png"
                   alt=""
                 />
               </div>
@@ -996,11 +1000,75 @@
                 >
                   <img
                     class="h-full w-full object-contain"
-                    src="/src/assets/img/pharmacy/pharmacy-color.png"
+                    src="/public/assets/img/pharmacy/pharmacy-color.png"
                     alt=""
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+
+        <div class="flex h-[430px] w-full flex-col bg-yellow-400 md:hidden">
+          <div class="z-0 flex h-1/2 w-full text-whiteAlternate">
+            <a
+              href="services.html"
+              class="relative flex h-full w-1/2 flex-col items-center bg-purple-950 text-base font-semibold md:text-3xl"
+            >
+              <div class="z-20 w-full p-8 text-center">
+                <h2>Our</h2>
+                <h2>services</h2>
+              </div>
+              <div class="absolute bottom-0 right-0 h-full w-full">
+                <img
+                  class="absolute bottom-0 right-0 h-2/3 w-full object-contain md:h-full md:w-full"
+                  src="/public/assets/img/pharmacy/services.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="about.html"
+              class="flex h-full w-1/2 flex-col items-center gap-4 bg-teal-600 p-4 text-center text-whiteAlternate"
+            >
+              <h2>About Us</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="#FDFCFD"
+              >
+                <path
+                  d="M453-280h60v-240h-60v240Zm26.98-314q14.02 0 23.52-9.2T513-626q0-14.45-9.48-24.22-9.48-9.78-23.5-9.78t-23.52 9.78Q447-640.45 447-626q0 13.6 9.48 22.8 9.48 9.2 23.5 9.2Zm.29 514q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Zm.23-60Q622-140 721-239.5t99-241Q820-622 721.19-721T480-820q-141 0-240.5 98.81T140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="relative z-0 h-full w-full gap-2 bg-black p-4 text-whiteAlternate"
+          >
+            <a
+              href="contact.html"
+              class="text-lg font-semibold hover:scale-110 md:text-base lg:text-2xl"
+            >
+              <h2>Contact Us</h2>
+            </a>
+            <strong class="block">MediCrest Pharmacy</strong>
+            <a href="tel:519-398-2323" class="">Tel: 519-398-2323</a>
+            <p class="">Fax: 519-398-2343</p>
+
+            <a href="mailto:medicrestrx@medicrestpharmacy.com" class="w-full"
+              >medicrestrx@medicrestpharmacy.com</a
+            >
+            <div class="absolute right-5 top-5 z-20 h-1/3 md:hidden">
+              <img
+                class="h-full w-full object-contain"
+                src="/public/assets/img/pharmacy/pharmacy-color.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -1014,7 +1082,7 @@
         <!-- Left -->
         <div class="relative md:w-1/3 lg:w-1/2">
           <div class="absolute left-0 top-0 opacity-30">
-            <img src="/src/assets/img1/new/quotation-mark.png" alt="" />
+            <img src="/public/assets/img/new/quotation-mark.png" alt="" />
           </div>
 
           <div
@@ -1096,9 +1164,11 @@
     </section>
 
     <section id="info" class="section">
-      <div class="relative mb-16 px-2 py-1 sm:px-8 lg:px-16">
+      <div
+        class="relative mb-16 flex flex-col items-center justify-center px-2 py-1 sm:px-8 lg:px-16"
+      >
         <div
-          class="absolute right-0 z-10 flex w-3/4 flex-col gap-1 bg-purple-950 p-2 text-center text-sm font-bold text-whiteAlternate md:p-16 md:text-2xl"
+          class="z-10 flex w-3/4 flex-col gap-1 bg-purple-950 p-2 text-center text-sm font-bold text-whiteAlternate md:p-16 md:text-2xl"
         >
           <h2>
             Together, we will ensure the health of our families and communities.
@@ -1106,7 +1176,7 @@
           <h2>This is our promise to you.</h2>
         </div>
         <div
-          class="absolute left-0 top-10 z-0 flex w-2/3 flex-col gap-1 bg-light bg-opacity-35 p-16 text-center text-2xl font-bold text-whiteAlternate md:top-28 md:h-52"
+          class="absolute left-0 top-10 z-0 flex h-20 w-full flex-col gap-1 bg-light bg-opacity-35 text-center text-2xl font-bold text-whiteAlternate md:top-28 md:h-52 md:p-16"
         ></div>
         <div
           class="z-10 mx-auto mt-32 flex w-full flex-col items-center md:mt-64 md:flex-row md:justify-evenly"
@@ -1215,7 +1285,7 @@
             <div class="w-max">
               <img
                 class="h-14 w-14 rounded-full bg-purple-100 object-contain shadow-md"
-                src="/src/assets/img1/logos/fav-icon.png"
+                src="/public/assets/img/logos/fav-icon.png"
                 alt=""
               />
             </div>
@@ -2055,13 +2125,13 @@
                   target="_blank"
                   ><img
                     class="h-6"
-                    src="./src/assets/img/social/facebook-white.png"
+                    src="./public/assets/img/social/facebook-white.png"
                     alt="Medicrest Pharmacy Facebook Page"
                 /></a>
                 <a href="https://www.instagram.com" target="_blank"
                   ><img
                     class="h-6"
-                    src="./src/assets/img/social/instagram-white.png"
+                    src="./public/assets/img/social/instagram-white.png"
                     alt="Medicrest Pharmacy Instagram Page"
                 /></a>
                 <a
@@ -2069,7 +2139,7 @@
                   target="_blank"
                   ><img
                     class="h-6"
-                    src="./src/assets/img/social/linkedin-white.png"
+                    src="./public/assets/img/social/linkedin-white.png"
                     alt="Medicrest Pharmacy Linkedin Page"
                 /></a>
               </div>
@@ -2099,7 +2169,7 @@
             >
               <img
                 class="object-contain"
-                src="./src/assets/img/north-east-arrow.svg"
+                src="./public/assets/img/north-east-arrow.svg"
                 alt=""
               />
             </button>
