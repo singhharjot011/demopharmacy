@@ -2942,12 +2942,12 @@ video {
   padding-top: 6rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .pt-28 {
   padding-top: 7rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {

@@ -3,6 +3,10 @@ const expNav = document.getElementById("expanded-navbar");
 const tempBanner = document.getElementById("temp-banner");
 const dismissBtn = document.getElementById("dismiss-btn");
 
+if (window.location.pathname === "/") {
+  window.location.replace("/index.html");
+}
+
 window.addEventListener("scroll", () => {
   if (expNav.classList.contains("flex")) {
     expNav.classList.remove("flex");
