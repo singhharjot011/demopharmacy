@@ -1,21 +1,23 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@custom-variant hover (&:hover);
 
 @theme {
   --animate-bounce-with-translate: bounceWithTranslate 1s ease-in forwards;
 
   --color-primary: #8372a6;
   --color-light: #e5d4d0;
-  --color-dark-button: #a68c86;
-  --color-dark-text: #663366;
-  --color-light-green: #b7dbd0;
-  --color-light-yellow: #fae17d;
-  --color-dark-green: #1e624d;
-  --color-pinkish-white: #f9f0fe;
-  --color-black-alternate: #101722;
-  --color-light-violet: #bec7e6;
+  --color-darkButton: #a68c86;
+  --color-darkText: #663366;
+  --color-lightGreen: #b7dbd0;
+  --color-lightYellow: #fae17d;
+  --color-darkGreen: #1e624d;
+  --color-pinkishWhite: #f9f0fe;
+  --color-blackAlternate: #101722;
+  --color-lightViolet: #bec7e6;
   --color-violet: #6d5be6;
-  --color-pink-alternate: #e93e68;
-  --color-white-alternate: #fdfcfd;
+  --color-pinkAlternate: #e93e68;
+  --color-whiteAlternate: #fdfcfd;
 
   @keyframes bounceWithTranslate {
     0% {
@@ -68,7 +70,7 @@
 }
 
 .active {
-  @apply font-extrabold text-dark-text ;
+  @apply text-dark-text font-extrabold;
 }
 
 .slide-right {

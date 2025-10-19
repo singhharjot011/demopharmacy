@@ -370,11 +370,11 @@
     <section id="hero" class="pt-28">
       <div
         id="slider"
-        class="group relative mt-8 flex h-[500px] overflow-hidden bg-gradient-to-b from-transparent via-purple-50 to-indigo-50 md:min-h-[550px] 2xl:min-h-[600px]"
+        class="group relative z-50 mt-8 flex h-[500px] overflow-hidden bg-gradient-to-b from-transparent via-purple-50 to-indigo-50 md:min-h-[550px] 2xl:min-h-[600px]"
       >
         <button
           id="arrow-left"
-          class="absolute top-1/2 left-6 z-10 -translate-x-16 cursor-pointer group-hover:translate-x-0"
+          class="absolute top-1/2 left-6 z-50 -translate-x-16 cursor-pointer group-hover:translate-x-0"
           aria-label="left arrow"
         >
           <svg
@@ -389,7 +389,7 @@
         </button>
         <button
           id="arrow-right"
-          class="absolute top-1/2 right-6 z-10 translate-x-16 cursor-pointer group-hover:translate-x-0"
+          class="absolute top-1/2 right-6 z-50 translate-x-16 cursor-pointer group-hover:translate-x-0"
           aria-label="right arrow"
         >
           <svg
@@ -647,7 +647,7 @@
             <div class="relative flex h-full w-full">
               <div class="h-full w-1/2 bg-[#ccfed9]"></div>
               <img
-                class="lazy absolute h-full w-full object-scale-down object-top"
+                class="lazy object-fit absolute h-full w-full object-top md:object-scale-down"
                 loading="lazy"
                 src="/public/assets/img/2025/slide-3.jpeg"
                 data-src="/public/assets/img/2025/slide-3.jpeg"
@@ -870,7 +870,7 @@
         <div class="flex h-[430px] w-full flex-col md:h-[600px] md:w-1/2">
           <div class="flex h-1/2 w-full">
             <div
-              class="flex w-1/2 flex-col items-center gap-4 bg-[#1E624D] p-4 text-center text-[#FDFCFD]"
+              class="flex w-1/2 flex-col items-center gap-4 bg-[darkGreen] p-4 text-center text-[#FDFCFD]"
             >
               <a
                 href="https://pharmaconnect.ca/Appointment/c8e1584d-faed-41d7-b9a5-7a7decc9cc45"
@@ -904,7 +904,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 -960 960 960"
-                  fill="#1E624D"
+                  fill="darkGreen"
                 >
                   <path
                     d="M120-120v-80l80-240-80-240v-80h508l58-160 94 34-46 126h106v80l-80 240 80 240v80H120Zm320-160h80v-120h120v-80H520v-120h-80v120H320v80h120v120Zm-236 80h552l-80-240 80-240H204l80 240-80 240Zm276-240Z"
