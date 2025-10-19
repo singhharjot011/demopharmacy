@@ -4,17 +4,6 @@ module.exports = {
   // safelist: ["hover"],
   theme: {
     extend: {
-      keyframes: {
-        bounceWithTranslate: {
-          "0%": { transform: "translateY(-200%)" },
-          "50%": { transform: "translateY(0)" },
-          "75%": { transform: "translateY(-20%)" },
-          "100%": { transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        bounceWithTranslate: "bounceWithTranslate 1s ease-in forwards",
-      },
       colors: {
         primary: "#8372A6",
         light: "#E5D4D0",
@@ -31,6 +20,18 @@ module.exports = {
         pinkAlternate: "#E93E68",
         whiteAlternate: "#FDFCFD",
       },
+      keyframes: {
+        bounceWithTranslate: {
+          "0%": { transform: "translateY(-200%)" },
+          "50%": { transform: "translateY(0)" },
+          "75%": { transform: "translateY(-20%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        bounceWithTranslate: "bounceWithTranslate 1s ease-in forwards",
+      },
+      
     },
   },
   plugins: [],
