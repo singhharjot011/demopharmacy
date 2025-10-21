@@ -70,7 +70,7 @@
 }
 
 .active {
-  @apply text-dark-text font-extrabold;
+  @apply text-darkText font-extrabold;
 }
 
 .slide-right {

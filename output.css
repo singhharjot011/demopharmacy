@@ -96,7 +96,8 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #8372a6;
-    --color-dark-text: #663366;
+    --color-darkText: #663366;
+    --color-whiteAlternate: #fdfcfd;
   }
 }
 @layer base {
@@ -907,9 +908,6 @@
   .border-orange-500 {
     border-color: var(--color-orange-500);
   }
-  .bg-\[\#1E624D\] {
-    background-color: #1E624D;
-  }
   .bg-\[\#3ebec4\] {
     background-color: #3ebec4;
   }
@@ -1017,6 +1015,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
     }
+  }
+  .bg-whiteAlternate {
+    background-color: var(--color-whiteAlternate);
   }
   .bg-yellow-200\/70 {
     background-color: color-mix(in srgb, oklch(94.5% 0.129 101.54) 70%, transparent);
@@ -1610,6 +1611,11 @@
   .hover\:text-primary {
     &:hover {
       color: var(--color-primary);
+    }
+  }
+  .hover\:text-whiteAlternate {
+    &:hover {
+      color: var(--color-whiteAlternate);
     }
   }
   .hover\:underline {
@@ -2632,7 +2638,7 @@
 .active {
   --tw-font-weight: var(--font-weight-extrabold);
   font-weight: var(--font-weight-extrabold);
-  color: var(--color-dark-text);
+  color: var(--color-darkText);
 }
 .slide-right {
   animation: slide-right 2s ease forwards;
