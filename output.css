@@ -287,6 +287,9 @@
   .top-1\/4 {
     top: calc(1/4 * 100%);
   }
+  .top-1\/5 {
+    top: calc(1/5 * 100%);
+  }
   .top-10 {
     top: calc(var(--spacing) * 10);
   }
@@ -478,6 +481,12 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
   .line-clamp-6 {
     overflow: hidden;
@@ -1206,6 +1215,9 @@
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -1747,6 +1759,11 @@
       padding: calc(var(--spacing) * 2);
     }
   }
+  .sm\:px-2 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
   .sm\:px-3\.5 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 3.5);
@@ -2050,6 +2067,11 @@
       width: 100%;
     }
   }
+  .md\:max-w-md {
+    @media (width >= 48rem) {
+      max-width: var(--container-md);
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -2181,6 +2203,11 @@
   .md\:px-2 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:px-4 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .md\:px-5 {

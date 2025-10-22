@@ -144,7 +144,7 @@ const slider = function () {
   };
 
   const startAutoSlide = () => {
-    autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    autoSlideInterval = setInterval(nextSlide, 10000); // Change slide every 10 seconds
   };
 
   const stopAutoSlide = () => {
